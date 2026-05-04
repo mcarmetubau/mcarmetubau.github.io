@@ -16,7 +16,7 @@ timezone:
 
 title: Web M.Carme Tubau # the main title
 
-tagline: Web professor # it will display as the subtitle
+tagline: Tecnologia i educació # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -34,7 +34,7 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
+  name: Maria Carme Tubau
   email: mcarmetubau@gmail.com # change to your email address
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
@@ -89,8 +89,8 @@ pageviews:
 #     light — Use the light color scheme
 #     dark — Use the dark color scheme
 #
-#theme_mode: # [light | dark]
-theme_mode: dark
+theme_mode: # [light | dark]
+
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
