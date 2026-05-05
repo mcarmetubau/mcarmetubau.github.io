@@ -25,7 +25,7 @@ Assegura’t que el nom no contingui la lletra ñ, accents ni caràcters especia
 1. Cada activitat ha de tenir **l’enunciat en negreta** i la resposta en text normal.
 1. Cada imatge ha de tenir un text explicatiu o un peu amb el format: `Figura <número>: <Breu descripció de la figura>`.
 1. Les comandes, documents de configuració i codi font han d’aparèixer en el PDF en text pla per facilitar-ne la còpia.
-1. Les comandes, documents de configuració i codi font han de tenir una tipografia monospace, com Consolas o Courier New. Per exemple: `$sudo apt install neofetch`.
+1. Les comandes, documents de configuració i codi font han de tenir una tipografia monospace, com Consolas o Courier New.
 1. Les activitats fetes a mà s’han de fotografiar amb prou resolució i afegir-les al PDF.
 
 A més:
@@ -33,12 +33,6 @@ A més:
 1. El document no ha de contenir faltes ortogràfiques.
 1. Si es fan captures de pantalla completes, aquestes han de demostrar l’autoria de les activitats. Per tant, han de mostrar tota la pantalla, incloent-hi la data i el nom del fitxer obert. Es recomana utilitzar l’eina gratuïta Flameshot per fer captures.
 1. Si les captures són d’una zona molt concreta, no cal complir el punt anterior. Cal aplicar el sentit comú.
-
-![Exemple de portada](exemplePortada.png)
-_Exemple de portada_
-
-![Exemple d’activitat](exempleActividad.png)
-_Exemple d’activitat_
 
 > Es proporciona en [aquest enllaç](/assets/docx/codigoUsuario_tXX.docx) una plantilla en format DOCX feta amb WPS Office que compleix la majoria dels requisits. Recorda eliminar els símbols "<" i ">" en utilitzar-la!
 {:.prompt-info}
@@ -57,7 +51,6 @@ A l’arrel del fitxer ZIP ha d’haver-hi el document PDF (si es demana) amb el
 
 - Activitats XML: `<el teu usuari>_a<número amb dos dígits>.xml`{: .filepath} (ex: `mctubaup_a01.xml`)
 - Activitats HTML: `<el teu usuari>_a<número amb dos dígits>.html`{: .filepath} (ex: `mctubaup_a01.html`)
-- Activitats Packet Tracer 6.2: `<el teu usuari>_a<número amb dos dígits>.pkt`{: .filepath} (ex: `mctubaup_a01.pkt`)
 - Activitats JavaScript: `<el teu usuari>_a<número amb dos dígits>.js`{: .filepath} (ex: `mctubaup_a01.js`)
 - Altres formats: `<el teu usuari>_a<número amb dos dígits>.<extensió>`{: .filepath} (ex: `mctubaup_a01.jar`)
 
