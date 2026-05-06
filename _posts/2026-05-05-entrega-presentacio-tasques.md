@@ -23,9 +23,6 @@ A més:
 1. Si es fan captures de pantalla completes, aquestes han de demostrar l’autoria de les activitats. Per tant, han de mostrar tota la pantalla, incloent-hi la data i el nom del fitxer obert. Es recomana utilitzar l’eina gratuïta Flameshot per fer captures.
 1. Si les captures són d’una zona molt concreta, no cal complir el punt anterior. Cal aplicar el sentit comú.
 
-> Es proporciona en [aquest enllaç](/assets/docx/codigoUsuario_tXX.docx) una plantilla en format DOCX feta amb WPS Office que compleix la majoria dels requisits. Recorda eliminar els símbols "<" i ">" en utilitzar-la!
-{:.prompt-info}
-
 ## Lliurament i presentació en format ZIP
 
 Si el lliurament de la tasca ha de ser un fitxer ZIP, el nom tindrà el format següent:
