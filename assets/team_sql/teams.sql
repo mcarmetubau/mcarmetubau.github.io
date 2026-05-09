@@ -1,21 +1,3 @@
----
-title: Exercicis SQL amb futbol (teams i players)
-date: 2026-05-09
-categories: [administració de sistemes informàtics en xarxa, bases-de-dades]
-tags: [mysql, exercicis,tasques, administració de sistemes informàtics en xarxa]
----
-
-# ⚽ Exercicis SQL amb equips i jugadors
-
-En aquest post treballem consultes SQL amb un exemple de futbol utilitzant dues taules:
-- `teams`
-- `players`
-
----
-
-## 🗄️ Creació de la base de dades
-
-
 DROP DATABASE IF EXISTS futbol;
 CREATE DATABASE futbol CHARACTER SET utf8mb4;
 USE futbol;
