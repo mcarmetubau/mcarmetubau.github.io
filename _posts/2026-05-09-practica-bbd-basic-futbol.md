@@ -1,6 +1,6 @@
 ---
 title: "Tasca:Introducció a consultes SQL"
-date: 2026-09-06 9:00:00 +0100
+date: 2026-05-09 9:00:00 +0100
 categories: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades]
 tags: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades, ASIX, FP, Dades, BBDD, Tasca, Pràctica]
 ---
