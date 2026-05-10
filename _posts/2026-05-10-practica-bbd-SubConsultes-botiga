@@ -1,6 +1,6 @@
 ---
-title: "Tasca: Introducció a consultes SQL - INNER JOIN - LEFT JOIN"
-date: 2026-05-10 10:00:00 +0100
+title: "Tasca: Introducció a consultes SQL - Subconsultes"
+date: 2026-05-10 12:00:00 +0100
 categories: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades]
 tags: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades, ASIX, FP, Dades, BBDD, Tasca, Pràctica]
 ---
@@ -52,52 +52,65 @@ i també les dades necessàries per poder realitzar totes les consultes dels exe
 A continuació, es mostren les activitats a fer.
 
 {:.activity}
-### Consultes INNER JOIN - JOIN
+### Subconsultes
 
 > 📸 Recorda fer captures.
+
 {:.prompt-info}
 
-1. Retorna una llista amb el nom del producte, el preu i el nom del fabricant de tots els productes de la base de dades.
 
-2. Retorna una llista amb el nom del producte, el preu i el nom del fabricant de tots els productes de la base de dades. Ordena el resultat pel nom del fabricant en ordre alfabètic.
+## Subconsultes (a la clàusula WHERE)
 
-3. Retorna una llista amb l’identificador del producte, el nom del producte, l’identificador del fabricant i el nom del fabricant, de tots els productes de la base de dades.
+### Amb operadors bàsics de comparació
 
-4. Retorna el nom del producte, el seu preu i el nom del seu fabricant del producte més barat.
+1. Retorna tots els productes del fabricant Lenovo. (Sense utilitzar `INNER JOIN`).
 
-5. Retorna el nom del producte, el seu preu i el nom del seu fabricant del producte més car.
+2. Retorna totes les dades dels productes que tenen el mateix preu que el producte més car del fabricant Lenovo. (Sense utilitzar `INNER JOIN`).
 
-6. Retorna una llista de tots els productes del fabricant Lenovo.
+3. Llista el nom del producte més car del fabricant Lenovo.
 
-7. Retorna una llista de tots els productes del fabricant Crucial que tinguin un preu superior a 200 €.
+4. Llista el nom del producte més barat del fabricant Hewlett-Packard.
 
-8. Retorna un llistat amb tots els productes dels fabricants Asus, Hewlett-Packard i Seagate, sense utilitzar l’operador `IN`.
+5. Retorna tots els productes de la base de dades que tenen un preu major o igual que el producte més car del fabricant Lenovo.
 
-9. Retorna un llistat amb tots els productes dels fabricants Asus, Hewlett-Packard i Seagate, utilitzant l’operador `IN`.
-
-10. Retorna un llistat amb el nom i el preu de tots els productes dels fabricants el nom dels quals acabi amb la vocal `e`.
-
-11. Retorna un llistat amb el nom i el preu de tots els productes el nom del fabricant dels quals contingui el caràcter `w`.
-
-12. Retorna un llistat amb el nom del producte, el preu i el nom del fabricant de tots els productes que tinguin un preu major o igual a 180 €. Ordena el resultat en primer lloc pel preu (en ordre descendent) i en segon lloc pel nom (en ordre ascendent).
-
-13. Retorna un llistat amb l’identificador i el nom del fabricant només d’aquells fabricants que tenen productes associats a la base de dades.
+6. Llista tots els productes del fabricant Asus que tenen un preu superior al preu mitjà de tots els seus productes.
 
 ---
 
-### Consultes multitaula (Composició externa)
 
-1. Resol totes les consultes utilitzant les clàusules `LEFT JOIN` i `RIGHT JOIN`.
+###  Subconsultes amb IN i NOT IN
 
-2. Retorna un llistat de tots els fabricants que existeixen a la base de dades, juntament amb els productes que té cadascun d’ells. El llistat també haurà de mostrar aquells fabricants que no tenen productes associats.
+7. Retorna els noms dels fabricants que tenen productes associats. (Utilitzant `IN` o `NOT IN`).
 
-3. Retorna un llistat on només apareguin aquells fabricants que no tenen cap producte associat.
+8. Retorna els noms dels fabricants que no tenen productes associats. (Utilitzant `IN` o `NOT IN`).
 
-4. Poden existir productes que no estiguin relacionats amb cap fabricant? Justifica la teva resposta.
+---
 
+###  Subconsultes amb EXISTS i NOT EXISTS
+
+9. Retorna els noms dels fabricants que tenen productes associats. (Utilitzant `EXISTS` o `NOT EXISTS`).
+
+10. Retorna els noms dels fabricants que no tenen productes associats. (Utilitzant `EXISTS` o `NOT EXISTS`).
+
+---
+
+### Subconsultes correlacionades
+
+11. Llista el nom de cada fabricant amb el nom i el preu del seu producte més car.
+
+12. Retorna un llistat de tots els productes que tenen un preu major o igual a la mitjana de tots els productes del seu mateix fabricant.
+
+13. Llista el nom del producte més car del fabricant Lenovo.
+
+---
+
+### Subconsultes (a la clàusula HAVING)
+
+18. Retorna un llistat amb tots els noms dels fabricants que tenen el mateix nombre de productes que el fabricant Lenovo.
 
 
 {:.prompt-info}
+
 ## Dóna'm el teu feedback
 
 <div class="strawpoll-embed" id="strawpoll_BJnXVG4zkZv" style="height: 644px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_BJnXVG4zkZv" src="https://strawpoll.com/embed/BJnXVG4zkZv" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
