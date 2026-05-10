@@ -18,15 +18,20 @@ RA4. Consulta la informació emmagatzemada emprant assistents, eines gràfiques 
 ## Activitats
 
 Per a realitzar aquesta pràctica necessiteu tenir correctament instal·lats el SGBD MySql
-
 ⚽ Exercicis SQL amb equips i jugadors
-En aquest post treballem consultes SQL amb un exemple de futbol utilitzant dues taules:
 
-      teams
-      players
+En aquest conjunt d’exercicis treballarem les consultes bàsiques i intermèdies de SQL utilitzant una base de dades relacionada amb el món del futbol. L’objectiu és practicar la manipulació i consulta de dades reals a partir de dues taules principals:
+
+teams → informació dels equips
+players → informació dels jugadors
+
+Mitjançant aquests exercicis aprendrem a utilitzar instruccions SQL com ara SELECT, WHERE, ORDER BY, GROUP BY, JOIN i altres operadors habituals per filtrar, ordenar i relacionar dades entre taules.
+
+Aquesta pràctica és ideal per consolidar els conceptes fonamentals de bases de dades relacionals i entendre com gestionar informació esportiva de manera eficient.
 
 🗄️ Creació de la base de dades
-Cal crear i carregar la base de dades teams, que trobareu al següent enllaç [Base de dades MySql Futbol](/assets/team_sql/teams.sql). 
+
+Cal crear i carregar la base de dades teams, que trobareu al següent enllaç: [Base de dades MySql Futbol](/assets/team_sql/teams.sql). 
 
 
 A continuació, es mostren les activitats a fer.
