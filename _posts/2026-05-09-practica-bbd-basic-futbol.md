@@ -1,5 +1,5 @@
 ---
-title: "Tasca:Introducció a consultes SQL"
+title: "Tasca: Introducció a consultes SQL"
 date: 2026-05-09 9:00:00 +0100
 categories: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades]
 tags: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades, ASIX, FP, Dades, BBDD, Tasca, Pràctica]
@@ -18,6 +18,8 @@ RA4. Consulta la informació emmagatzemada emprant assistents, eines gràfiques 
 ## Activitats
 
 Per a realitzar aquesta pràctica necessiteu tenir correctament instal·lats el SGBD MySql
+
+
 ⚽ Exercicis SQL amb equips i jugadors
 
 En aquest conjunt d’exercicis treballarem les consultes bàsiques i intermèdies de SQL utilitzant una base de dades relacionada amb el món del futbol. L’objectiu és practicar la manipulació i consulta de dades reals a partir de dues taules principals:
