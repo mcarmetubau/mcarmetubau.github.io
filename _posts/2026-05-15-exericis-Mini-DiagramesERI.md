@@ -1,6 +1,5 @@
-
 ---
-title: "Tasca: Exercicis Mini ER2"
+title: "Tasca: Exercicis Mini Diagrames ER I"
 date: 2026-05-15 10:00:00 +0100
 categories: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades]
 tags: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades, ASIX, FP, Dades, BBDD, Tasca, Pràctica, ER]
