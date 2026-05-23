@@ -1,5 +1,5 @@
 ---
-title: "Tasca: Exercicis Diagrames II"
+title: "Tasca: Exercicis Diagrames model E/R II"
 date: 2026-05-16 10:00:00 +0100
 categories: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades]
 tags: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades, ASIX, FP, Dades, BBDD, Tasca, Pràctica, ER]
