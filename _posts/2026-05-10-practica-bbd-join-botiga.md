@@ -19,7 +19,7 @@ RA4. Consulta la informació emmagatzemada emprant assistents, eines gràfiques 
 
 Per a realitzar aquesta pràctica necessiteu tenir correctament instal·lats el SGBD MySql
 
-🛒 Exercicis SQL amb productes i fabricants
+# Exercicis SQL amb productes i fabricants
 
 En aquest conjunt d’exercicis treballarem les consultes bàsiques i intermèdies de SQL utilitzant una base de dades relacionada amb una botiga d’informàtica. L’objectiu és practicar la manipulació i consulta de dades reals a partir de dues taules principals:
 
@@ -38,7 +38,7 @@ Utilitzar funcions com LIMIT, IN i LIKE
 Aquest bloc és clau per entendre com funcionen les bases de dades relacionals, ja que en situacions reals les dades gairebé sempre es troben distribuïdes en diverses taules connectades entre si.
 
 
-🗄️ Creació de la base de dades
+# Creació de la base de dades
 
 Cal crear i carregar la base de dades botiga, que trobareu al següent enllaç [Base de dades MySql Botiga](/assets/botiga_sql/botiga.sql).  
 
