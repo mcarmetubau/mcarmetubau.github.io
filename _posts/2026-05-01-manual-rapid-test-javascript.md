@@ -46,7 +46,7 @@ console.log(contrasenyaValida("")) // false
 
 Crea un fitxer `index.html`, enganxa aquest contingut i obre’l amb el navegador.  
 Obre la consola (F12 → “Console”) per veure els resultats.
-\\\html <!-- 
+```html  
 <!DOCTYPE html>  
 <html lang="ca">  
 <head>  
@@ -69,7 +69,7 @@ Obre la consola (F12 → “Console”) per veure els resultats.
   </script>
 </body>
 </html>
- --> \\\
+ ```
 ---
 
 ## 2. Provar el codi directament a la consola del navegador
