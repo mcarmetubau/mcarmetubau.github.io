@@ -33,7 +33,6 @@ Ens cal saber la data en la qual es desenvolupen les etapes. No hi pot haver cap
      alt="Etapes"
      width = "250" />
 
-
 ## Ex 2 – Ports de muntanya en les etapes 
 
 Cada etapa de La Volta pot incloure un o més ports de muntanya (o cap), però cada port només pot estar inclòs dins d’una etapa. Dels ports de muntanya ens interessa saber el seu topònim i la seva alçada en metres.
