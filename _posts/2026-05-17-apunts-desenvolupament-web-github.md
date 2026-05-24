@@ -71,7 +71,7 @@ En un repositori `git` podem diferenciar les seccions següents:
 - *Local Repository*
 - *Remote Repository*
 
-![Figura 1](assets/img/img-00.png)
+![Figura 1](../assets/img/img-00.png)
 
 *Figura 1: Imatge d’Oliver Steele.*
 
@@ -273,7 +273,7 @@ Es recomana llegir el capítol sobre branques del llibre *Pro Git*.
 
 ## Com treballar en equip amb `git`
 
-![Figura 2](assets/img/img-01.png)
+![Figura 2](../assets/img/img-01.png)
 
 *Figura 2: Imatge extreta del blog de James Chambers.*
 
