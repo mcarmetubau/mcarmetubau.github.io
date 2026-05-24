@@ -219,7 +219,7 @@ git clone <url_del_repositori_remot>
 Exemple:
 
 ```bash
-git clone https://github.com/josejuansanchez/taller-git-github.git
+git clone https://github.com/mcarmetubau/taller-git-github.git
 ```
 
 ### Opció 2: Afegir un repositori remot
@@ -231,7 +231,7 @@ git remote add <àlies> <url_del_repositori_remot>
 Exemple:
 
 ```bash
-git remote add taller-git https://github.com/josejuansanchez/taller-git-github.git
+git remote add taller-git https://github.com/mcarmetubau/taller-git-github.git
 ```
 
 Comprovar repositoris remots:
