@@ -311,7 +311,7 @@ Hem de poder traçar/dibuixar la línia evolutiva de cada Pokémon.
 
 Per exemple: En *Bulbasaur* és bàsic i evoluciona cap a *Ivysaur* i aquest cap a *Venusaur*
 
-![![Evolució de pokemons](assets/carta-pizzas.jpg)](assets/exercici-pokemon-evolucio.png)
+![![Evolució de pokemons](../assets/img/exercicis/carta-pizzas.jpg)](../assets/img/exercicis/exercici-pokemon-evolucio.png)
 
 Perquè un Pokémon evolucioni cal que pugi de nivell, i cada Pokémon té el seu nivell desencadenant.
 En l’exemple anterior *Bulbasaur* evoluciona a *Ivysaur* quan aconsegueix el nivell 16 i aquest evoluciona a *Venusaur* si aconsegueix el nivell 32. Cal guardar el nivell actual de cada Pokémon per dur un control i saber quan evolucionar-lo. El nivell és una valor entre 1 i 100.
