@@ -27,7 +27,7 @@ En aquest taller d’introducció a `git` i [GitHub][1] aprendrem les ordres bà
 
 # `git`
 
-## Instal·lació i configuració de `git`
+## Instal·lació i configuració de `git` {#installacio-i-configuracio-de-git}
 
 ### Instal·lació de `git`
 
