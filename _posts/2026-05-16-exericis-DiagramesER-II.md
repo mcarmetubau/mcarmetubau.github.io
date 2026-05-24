@@ -453,7 +453,7 @@ Cada comprador pot comprar el peix a la llotja que vulgui, però per poder-ho fe
 
 ## VOLS AÈRIS
 
-![![Vols Aèris](assets/exercici-vols-aeris-logo.png)](assets/exercici-vols-aeris-logo.png)
+![![Vols Aèris](../assets/img/exercicis/exercici-vols-aeris-logo.png)](../assets/img/exercicis/exercici-vols-aeris-logo.png)
 
 L'empresa Amadeus IT Group  vol redissenyar el seu producte estrella de control aeroportuari i dels vols que s'hi realitzen.
 Per fer-ho partirà dels requisits recollits pels seus analistes de les diferents seus que té. 
