@@ -2,7 +2,7 @@
 title: "Apunts desenvolupament WEB - GitHub"
 date: 2026-05-17 10:00:00 +0100
 categories: [Administració de Sistemes Informàtics en Xarxa, Desenvolupament Web]
-tags: [Administració de Sistemes Informàtics en Xarxa, Desenvolupament Web, ASIX, FP, Github, Material]
+tags: [Administració de Sistemes Informàtics en Xarxa, Desenvolupament Web, ASIX, FP, Github, Apunts]
 ---
 
 # Taller d’introducció a `git` i GitHub
@@ -12,7 +12,7 @@ En aquest taller d’introducció a `git` i [GitHub][1] aprendrem les ordres bà
 ## Índex
 
 1. [`git`](#git)
-   1. [Instal·lació i configuració de `git`](#installacio-i-configuració-de-git)
+   1. [Instal·lació i configuració de `git`](#installacio-i-configuracio-de-git)
    2. [Seccions principals d’un repositori `git`](#seccions-principals-dun-repositori-git)
    3. [Estats d’un fitxer a `git`](#estats-dun-fitxer-a-git)
    4. [Com treballar amb un repositori local](#com-treballar-amb-un-repositori-local)
