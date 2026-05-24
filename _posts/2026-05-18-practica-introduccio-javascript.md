@@ -15,6 +15,7 @@ Durada activitats obligatòries: 6 hores.
 
 RA2.
 
+Com puc comprovar el codi Javascript? Llegir [Manual Rapid com testejar Javascript] (/posts/manual-rapid-test-javascript/).
 # Exercicis de JavaScript
 
 Aquesta és una col·lecció d’exercicis de JavaScript pensada per a persones que estan començant a programar. Els exercicis t’ajudaran a practicar conceptes bàsics com:
