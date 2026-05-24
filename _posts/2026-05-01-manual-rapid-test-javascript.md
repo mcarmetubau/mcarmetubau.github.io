@@ -6,13 +6,13 @@ tags: [Administració de Sistemes Informàtics en Xarxa, Llenguatge de Marques, 
 ---
  
 # Manual ràpid per provar JavaScript  
-## Exercici: `contrasenaValida`
+## Exercici: `contrasenyaValida`
 
 ---
 
 ## Enunciat
 
-Escriu una funció anomenada **`contrasenaValida`** que rebi un string i retorni `true` si el string és igual a:
+Escriu una funció anomenada **`contrasenyaValida`** que rebi un string i retorni `true` si el string és igual a:
 
 - `"2Fj(jjbFsuj"`
 - `"eoZiugBf&g9"`
@@ -21,23 +21,23 @@ En qualsevol altre cas ha de retornar `false`.
 
 ### Codi de prova:
 
-console.log(contrasenaValida("2Fj(jjbFsuj")) // true  
-console.log(contrasenaValida("eoZiugBf&g9")) // true  
-console.log(contrasenaValida("hola")) // false  
-console.log(contrasenaValida("")) // false  
+console.log(contrasenyaValida("2Fj(jjbFsuj")) // true  
+console.log(contrasenyaValida("eoZiugBf&g9")) // true  
+console.log(contrasenyaValida("hola")) // false  
+console.log(contrasenyaValida("")) // false  
 
 ---
 
 ## Solució JavaScript
 
-function contrasenaValida(text) {  
+function contrasenyaValida(text) {  
   return text === "2Fj(jjbFsuj" || text === "eoZiugBf&g9";  
 }
 
-console.log(contrasenaValida("2Fj(jjbFsuj")) // true  
-console.log(contrasenaValida("eoZiugBf&g9")) // true  
-console.log(contrasenaValida("hola")) // false  
-console.log(contrasenaValida("")) // false  
+console.log(contrasenyaValida("2Fj(jjbFsuj")) // true  
+console.log(contrasenyaValida("eoZiugBf&g9")) // true  
+console.log(contrasenyaValida("hola")) // false  
+console.log(contrasenyaValida("")) // false  
 
 ---
 #Possibles configuracions per provar el codi
@@ -46,30 +46,30 @@ console.log(contrasenaValida("")) // false
 
 Crea un fitxer `index.html`, enganxa aquest contingut i obre’l amb el navegador.  
 Obre la consola (F12 → “Console”) per veure els resultats.
-
+\\\html <!-- 
 <!DOCTYPE html>  
 <html lang="ca">  
 <head>  
   <meta charset="UTF-8" />  
-  <title>Prova JavaScript – contrasenaValida</title>  
+  <title>Prova JavaScript – contrasenyaValida</title>  
 </head>  
 <body>  
-  <h1>Prova de la funció <code>contrasenaValida</code></h1>  
+  <h1>Prova de la funció <code>contrasenyaValida</code></h1>  
   <p>Obre la consola del navegador per veure els resultats.</p>
 
   <script>
-    function contrasenaValida(text) {
+    function contrasenyaValida(text) {
       return text === "2Fj(jjbFsuj" || text === "eoZiugBf&g9";
     }
 
-    console.log(contrasenaValida("2Fj(jjbFsuj")) // true
-    console.log(contrasenaValida("eoZiugBf&g9")) // true
-    console.log(contrasenaValida("hola")) // false
-    console.log(contrasenaValida("")) // false
+    console.log(contrasenyaValida("2Fj(jjbFsuj")) // true
+    console.log(contrasenyaValida("eoZiugBf&g9")) // true
+    console.log(contrasenyaValida("hola")) // false
+    console.log(contrasenyaValida("")) // false
   </script>
 </body>
 </html>
-
+ --> \\\
 ---
 
 ## 2. Provar el codi directament a la consola del navegador
@@ -79,14 +79,14 @@ Obre la consola (F12 → “Console”) per veure els resultats.
 3. Ves a la pestanya **Console**.  
 4. Enganxa:
 
-function contrasenaValida(text) {  
+function contrasenyaValida(text) {  
   return text === "2Fj(jjbFsuj" || text === "eoZiugBf&g9";  
 }
 
-console.log(contrasenaValida("2Fj(jjbFsuj")) // true  
-console.log(contrasenaValida("eoZiugBf&g9")) // true  
-console.log(contrasenaValida("hola")) // false  
-console.log(contrasenaValida("")) // false  
+console.log(contrasenyaValida("2Fj(jjbFsuj")) // true  
+console.log(contrasenyaValida("eoZiugBf&g9")) // true  
+console.log(contrasenyaValida("hola")) // false  
+console.log(contrasenyaValida("")) // false  
 
 ---
 
