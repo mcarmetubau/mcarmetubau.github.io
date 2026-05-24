@@ -30,7 +30,7 @@ console.log(contrasenyaValida("")) // false
 
 ## Solució JavaScript
 
-function contrasenyaValida(text) {  
+function contrasenyaValida(text) {   
   return text === "2Fj(jjbFsuj" || text === "eoZiugBf&g9";  
 }
 
