@@ -12,7 +12,7 @@ En aquest taller d’introducció a `git` i [GitHub][1] aprendrem les ordres bà
 ## Índex
 
 1. [`git`](#git)
-   1. [Instal·lació i configuració de `git`](#instal·lació-i-configuració-de-git)
+   1. [Instal·lació i configuració de `git`](#installacio-i-configuració-de-git)
    2. [Seccions principals d’un repositori `git`](#seccions-principals-dun-repositori-git)
    3. [Estats d’un fitxer a `git`](#estats-dun-fitxer-a-git)
    4. [Com treballar amb un repositori local](#com-treballar-amb-un-repositori-local)
@@ -270,3 +270,69 @@ git merge
 ## Branches
 
 Es recomana llegir el capítol sobre branques del llibre *Pro Git*.
+
+## Com treballar en equip amb `git`
+
+![Figura 2](images/img-01.png)
+
+*Figura 2: Imatge extreta del blog de James Chambers.*
+
+Es recomana llegir:
+
+- *Using Git in a team: a cheatsheet*
+
+## El fitxer `.gitignore`
+
+Exemple de `.gitignore`:
+
+```gitignore
+*.class
+*.log
+```
+
+## Consultar l’historial de commits
+
+Historial complet:
+
+```bash
+git log
+```
+
+Historial resumit:
+
+```bash
+git log --oneline
+```
+
+Historial amb gràfic ASCII:
+
+```bash
+git log --graph
+```
+
+# GitHub
+
+Es recomana llegir el capítol sobre GitHub del llibre *Pro Git*.
+
+## Tips
+
+- Recordar la contrasenya:
+  https://gist.github.com/ankurk91/f0b26f1c30d0d6d3ca4e
+
+## Referències
+
+- Pro Git — Scott Chacon, Ben Straub  
+  https://git-scm.com/book/es/v2
+
+- Aprèn Git — Juan Julián Merelo, Pablo Hinojosa  
+  https://github.com/oslugr/curso-git
+
+- Git i GitHub. Guia de supervivència — Luis José Sánchez González  
+  https://leanpub.com/gitygithub
+
+- GitHub Guides  
+  https://guides.github.com
+
+- Using Git source control in VS Code  
+  https://code.visualstudio.com/docs/sourcecontrol/overview
+
