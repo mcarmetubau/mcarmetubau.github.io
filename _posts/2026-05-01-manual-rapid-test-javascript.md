@@ -68,26 +68,7 @@ Obre la consola (F12 → “Console”) per veure els resultats.
  ```
 ---
 
-## 2. Provar el codi directament a la consola del navegador
-
-1. Obre qualsevol pàgina web.  
-2. Prem **F12** o **Ctrl+Shift+I**.  
-3. Ves a la pestanya **Console**.  
-4. Enganxa:
-
-function contrasenyaValida(text) {  
-  return text === "2Fj(jjbFsuj" || text === "eoZiugBf&g9";  
-}
-
-console.log(contrasenyaValida("2Fj(jjbFsuj")) // true  
-console.log(contrasenyaValida("eoZiugBf&g9")) // true  
-console.log(contrasenyaValida("hola")) // false  
-console.log(contrasenyaValida("")) // false  
-
----
-
-
-## 3. Revisar el codi online (sense instal·lar res)
+## 2. Revisar el codi online (sense instal·lar res)
 
 Pots enganxar **tot aquest bloc únic** en qualsevol d’aquests editors:
 
