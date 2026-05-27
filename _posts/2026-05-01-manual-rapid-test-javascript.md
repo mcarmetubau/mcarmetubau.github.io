@@ -4,13 +4,9 @@ date: 2026-05-18 10:00:00 +0100
 categories: [Administració de Sistemes Informàtics en Xarxa, Llenguatge de Marques]
 tags: [Administració de Sistemes Informàtics en Xarxa, Llenguatge de Marques, ASIX, FP, Javascript, Programació, Manual]
 ---
- 
-# Manual ràpid per provar JavaScript  
-## Exercici: `contrasenyaValida`
 
----
 
-## Enunciat
+## Suposit - Enunciat
 
 Escriu una funció anomenada **`contrasenyaValida`** que rebi un string i retorni `true` si el string és igual a:
 

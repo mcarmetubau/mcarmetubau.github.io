@@ -48,22 +48,17 @@ Cal crear i carregar la base de dades botiga, que trobareu al següent enllaç [
 
    Un cop creada la taula, inseriu-hi tots els registres de la base de dades `botiga` fent servir una única operació d’inserció.
 
-6. Creeu una vista amb el nom `vista_fabricant_productes` que tingui les columnes següents:
-   - `nom_fabricant`
-   - `nom_producte`
-   - `preu`
+6. Elimineu el fabricant Asus. És possible eliminar-lo? Si no fos possible, quins canvis hauríeu de fer perquè es pogués esborrar?
 
-7. Elimineu el fabricant Asus. És possible eliminar-lo? Si no fos possible, quins canvis hauríeu de fer perquè es pogués esborrar?
+7. Elimineu el fabricant Xiaomi. És possible eliminar-lo? Si no fos possible, quins canvis hauríeu de fer perquè es pogués esborrar?
 
-8. Elimineu el fabricant Xiaomi. És possible eliminar-lo? Si no fos possible, quins canvis hauríeu de fer perquè es pogués esborrar?
+8. Actualitzeu el codi del fabricant Lenovo i assigneu-li el valor 20. És possible actualitzar-lo? Si no fos possible, quins canvis hauríeu de fer perquè es pogués actualitzar?
 
-9. Actualitzeu el codi del fabricant Lenovo i assigneu-li el valor 20. És possible actualitzar-lo? Si no fos possible, quins canvis hauríeu de fer perquè es pogués actualitzar?
+9. Actualitzeu el codi del fabricant Huawei i assigneu-li el valor 30. És possible actualitzar-lo? Si no fos possible, quins canvis hauríeu de fer perquè es pogués actualitzar?
 
-10. Actualitzeu el codi del fabricant Huawei i assigneu-li el valor 30. És possible actualitzar-lo? Si no fos possible, quins canvis hauríeu de fer perquè es pogués actualitzar?
+10. Actualitzeu el preu de tots els productes sumant-hi 5 € al preu actual.
 
-11. Actualitzeu el preu de tots els productes sumant-hi 5 € al preu actual.
-
-12. Elimineu totes les impressores que tinguin un preu inferior a 200 €.
+11. Elimineu totes les impressores que tinguin un preu inferior a 200 €.
 
 ---
 
