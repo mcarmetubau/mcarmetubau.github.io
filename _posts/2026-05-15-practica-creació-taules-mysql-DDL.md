@@ -7,6 +7,8 @@ tags: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dad
 
 ## Informació sobre la tasca
 
+Realitza un dels exercicis de  creació de base de dades, i les preguntes de comprensió
+
 El lliurament serà en format PDF. Llegir [Lliurament i presentació de tasques](/posts/entrega-presentacio-tasques/).
 
 La tasca es qualifica amb una nota d'APTE (10) o NO APTE (0).
@@ -19,7 +21,7 @@ RA
 {:.prompt-info}
 
 
-# Exercicis de Bases de Dades Relacionals
+# Exercicis de Creació de Bases de Dades Relacionals
 
 ## Exercici 1 — Base de dades *Farmacia*
 
@@ -219,3 +221,67 @@ Per a tots els exercicis:
 5. Escollir tipus de dades coherents per a cada atribut.
 6. Aplicar restriccions d’integritat quan sigui necessari.
 7. Escriure el codi SQL ordenat i ben documentat.
+
+
+
+#  Preguntes de comprensió — MySQL (Claus i constraints)
+
+---
+
+##  1. Claus i relacions
+
+- Explica amb les teves paraules què és una clau primària i per què és important en una base de dades.
+- Quina diferència hi ha entre una clau primària i una clau forana?
+- Què vol dir que dues taules estiguin relacionades?
+- Per què no es poden posar valors duplicats en una clau primària?
+
+---
+
+## 2. Clau primària composta
+
+- Què és una clau primària composta i en quin tipus de taules s’utilitza?
+- Dona un exemple real on tinguis sentit utilitzar una clau composta.
+
+---
+
+## 3. FOREIGN KEY i integritat referencial
+
+- Què passa si intentes inserir una fila amb una clau forana que no existeix a la taula pare?
+- Explica què és la integritat referencial amb les teves paraules.
+- Per què una FOREIGN KEY millora la qualitat de les dades?
+
+---
+
+## 4. ON DELETE / ON UPDATE
+
+- Explica què fa `ON DELETE CASCADE` amb un exemple.
+- Què passaria si NO existís cap `ON DELETE CASCADE` en una relació pare-fill?
+- En quin cas utilitzaries `ON DELETE RESTRICT`?
+
+---
+
+## 5. CONSTRAINTS
+
+- Què és una constraint en MySQL?
+- Per què és útil posar nom a una constraint?
+- Quina diferència hi ha entre:
+  - CHECK
+  - NOT NULL
+  - UNIQUE
+- Explica un exemple real d’ús de `CHECK`.
+- Què passa si intentes inserir un valor que no compleix un `CHECK`?
+
+---
+
+## 6. Raonament SQL
+
+- Per què és millor utilitzar constraints que no pas confiar només en l’aplicació (programa)?
+- Quins problemes poden aparèixer si no hi ha FOREIGN KEYS en una base de dades?
+- Explica què passaria si dues taules relacionades no tenen cap restricció d’integritat.
+
+---
+
+## 7. Reflexió final
+
+- Què és el més important que garanteix una base de dades ben dissenyada?
+- Quina és la diferència entre “guardar dades” i “garantir dades correctes”?
