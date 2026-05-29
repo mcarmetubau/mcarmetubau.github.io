@@ -247,28 +247,278 @@ AnyLlicenciatura INT CHECK (AnyLlicenciatura >= 1950)
 
 ---
 
-# 8. Exemple complet
+# 8. Què és una `CONSTRAINT`?
+
+
+Una **constraint** (restricció) és una regla que s’aplica a una columna o a una taula per controlar quines dades s’hi poden guardar.
+
+Serveix per:
+
+* garantir integritat de dades
+* evitar errors
+* relacionar taules
+* validar valors
+
+Sintaxi general:
+
+```sql
+CONSTRAINT nom_restriccio tipus_restriccio
+```
+
+---
+
+
+# CONSTRAINT en MySQL — Explicació ràpida
+
+## Què és `CONSTRAINT`?
+
+`CONSTRAINT` s’utilitza per **donar nom a una restricció** dins d’una taula.
+
+Una restricció pot ser:
+
+* PRIMARY KEY
+* FOREIGN KEY
+* UNIQUE
+* CHECK
+* NOT NULL (en alguns casos)
+* DEFAULT
+
+---
+
+# Per què és important posar nom?
+
+## ✔ 1. Identificar errors
+
+Quan hi ha un error:
+
+```
+ERROR: constraint fk_prescriu_pacient violated
+```
+
+És més fàcil saber què ha fallat.
+
+---
+
+## ✔ 2. Eliminar restriccions després
+
+```sql id="t2k9ab"
+ALTER TABLE PRESCRIU
+DROP CONSTRAINT fk_prescriu_pacient;
+```
+
+---
+
+## ✔ 3. Modificar restriccions
+
+```sql id="p9x7lm"
+ALTER TABLE PRESCRIU
+ADD CONSTRAINT fk_prescriu_pacient
+FOREIGN KEY (DNI)
+REFERENCES PACIENT(DNI);
+```
+
+---
+
+# Sintaxi general
+
+```sql
+CREATE TABLE Exemple (
+    columna tipus,
+
+    CONSTRAINT nom_restriccio
+        restriccio
+);
+```
+
+---
+
+
+## Exemple per primary
+
+```sql
+CREATE TABLE PACIENT (
+    DNI VARCHAR(15),
+
+    CONSTRAINT pk_pacient
+        PRIMARY KEY (DNI)
+);
+```
+
+
+## Exemple per foreign key
 
 ```sql
 CREATE TABLE PRESCRIU (
     DNI VARCHAR(15),
-    NomComercial VARCHAR(100),
+
+    CONSTRAINT fk_prescriu_pacient
+        FOREIGN KEY (DNI)
+        REFERENCES PACIENT(DNI)
+);
+```
+
+
+## Exemple per check
+
+```sql
+CONSTRAINT ck_quantitat
+CHECK (Quantitat > 0)
+```
+
+---
+
+# Recomanació per posar noms
+
+Es fa servir sovint aquesta convenció:
+
+| Tipus       | Prefix |
+| ----------- | -----: |
+| Primary Key |  `pk_` |
+| Foreign Key |  `fk_` |
+| Unique      |  `uq_` |
+| Check       |  `ck_` |
+| Not Null    |  `nn_` |
+
+---
+
+
+
+# 8. Exemple complet
+
+
+## PACIENT
+
+```sql
+CREATE TABLE PACIENT (
+    DNI VARCHAR(15),
+    Nom VARCHAR(50) NOT NULL,
+    Cognoms VARCHAR(100) NOT NULL,
+
+    CONSTRAINT pk_pacient
+        PRIMARY KEY (DNI)
+);
+```
+
+---
+
+## METGE
+
+```sql
+CREATE TABLE METGE (
     NumCollegiat VARCHAR(20),
-    Data DATE,
-    Quantitat INT CHECK (Quantitat > 0),
+    Nom VARCHAR(50) NOT NULL,
+    Cognoms VARCHAR(100) NOT NULL,
 
-    PRIMARY KEY (DNI, NomComercial, NumCollegiat, Data),
+    CONSTRAINT pk_metge
+        PRIMARY KEY (NumCollegiat)
+);
+```
 
-    FOREIGN KEY (DNI)
+---
+
+## MEDICAMENT
+
+```sql
+CREATE TABLE MEDICAMENT (
+    NomComercial VARCHAR(100),
+    Formula VARCHAR(255) NOT NULL,
+
+    CONSTRAINT pk_medicament
+        PRIMARY KEY (NomComercial)
+);
+```
+
+---
+
+# PRESCRIU
+
+```sql
+CREATE TABLE PRESCRIU (
+
+    DNI VARCHAR(15)
+        CONSTRAINT nn_prescriu_dni NOT NULL,
+
+    NomComercial VARCHAR(100)
+        CONSTRAINT nn_prescriu_medicament NOT NULL,
+
+    NumCollegiat VARCHAR(20)
+        CONSTRAINT nn_prescriu_metge NOT NULL,
+
+    Data DATE
+        CONSTRAINT nn_prescriu_data NOT NULL,
+
+    Quantitat INT
+        CONSTRAINT nn_prescriu_quantitat NOT NULL,
+
+    CONSTRAINT ck_quantitat_positiva
+        CHECK (Quantitat > 0),
+
+    CONSTRAINT pk_prescriu
+        PRIMARY KEY (
+            DNI,
+            NomComercial,
+            NumCollegiat,
+            Data
+        ),
+
+    CONSTRAINT fk_prescriu_pacient
+        FOREIGN KEY (DNI)
         REFERENCES PACIENT(DNI)
         ON DELETE CASCADE
         ON UPDATE CASCADE,
 
-    FOREIGN KEY (NomComercial)
+    CONSTRAINT fk_prescriu_medicament
+        FOREIGN KEY (NomComercial)
         REFERENCES MEDICAMENT(NomComercial)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+
+    CONSTRAINT fk_prescriu_metge
+        FOREIGN KEY (NumCollegiat)
+        REFERENCES METGE(NumCollegiat)
         ON DELETE CASCADE
         ON UPDATE CASCADE
 );
 ```
 
 ---
+
+# Inserció d’exemple
+
+```sql
+INSERT INTO PACIENT
+VALUES (
+    '12345678A',
+    'Joan',
+    'Garcia'
+);
+```
+
+```sql
+INSERT INTO METGE
+VALUES (
+    'COL001',
+    'Marta',
+    'Soler'
+);
+```
+
+```sql
+INSERT INTO MEDICAMENT
+VALUES (
+    'Ibuprofeno 600',
+    'Ibuprofè 600 mg'
+);
+```
+
+```sql
+INSERT INTO PRESCRIU
+VALUES (
+    '12345678A',
+    'Ibuprofeno 600',
+    'COL001',
+    '2026-05-29',
+    2
+);
+```
+
