@@ -19,7 +19,7 @@ RA
 {:.prompt-info}
 
 
-Cal crear i carregar la base de dades biblioteca, que trobareu al següent enllaç [Base de dades MySql Biblioteca](/assets/biblioteca_sql/biblioteca.sql)
+Cal crear i carregar la base de dades biblioteca, que trobareu al següent enllaç [Base de dades MySql Biblioteca](/assets/biblioteca/biblioteca.sql)
 
 
 # Base de Dades Biblioteca — MySQL
