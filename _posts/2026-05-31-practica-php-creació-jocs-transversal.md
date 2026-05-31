@@ -5,6 +5,21 @@ categories: [Administració de Sistemes Informàtics en Xarxa, Desenvolupament w
 tags: [Administració de Sistemes Informàtics en Xarxa, Desenvolupament WEB, ASIX, FP, PHP, JavaScrtip, Mysql, BBDD, DDL, tasca,practica]
 ---
 
+## Informació sobre la tasca
+
+Realitza un dels exercicis de  creació de base de dades, i les preguntes de comprensió
+
+El lliurament serà en format PDF. Llegir [Lliurament i presentació de tasques](/posts/entrega-presentacio-tasques/).
+
+La tasca es qualifica amb una nota d'APTE (10) o NO APTE (0).
+
+Durada activitats obligatòries: 6 hores.
+
+RA
+
+> 📸 Recorda fer captures.
+{:.prompt-info}
+
 
 # Proposta de Jocs Educatius amb Base de Dades i Gamificació
 
