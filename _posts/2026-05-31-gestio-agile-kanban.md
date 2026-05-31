@@ -27,7 +27,7 @@ Al final del projecte, tots els membres de l’equip hauran participat en totes 
 ## Resum projecte agile
 
 
-Infografia informativa resum de projecte agile. Llegir [Infografia resum agile +] (/assets/infografia/infografia_agile.png).
+Infografia informativa resum de projecte agile. Llegir [Infografia resum agile] (/assets/infografia/infografia_agile.png).
 
 
 ## 👥 Organització dels equips
@@ -66,7 +66,7 @@ Tota tasca ha d’incloure:
 
 ---
 
-## 👨‍💼 Rols de l’equip
+## 👨‍�?Rols de l’equip
 
 Els rols roten a cada Sprint. Exemple de rols comuns en projectes agiles
 
@@ -100,9 +100,9 @@ Cada Sprint s’ha d’omplir una taula com aquesta:
 
 ---
 
-## 🗓️ Planificació de Sprints (pensant en un projecte de BD,adaptable a qualsevol exemple)
+## 🗓�?Planificació de Sprints (pensant en un projecte de BD,adaptable a qualsevol exemple)
 
-### Sprint 1 — Anàlisi
+### Sprint 1 �?Anàlisi
 **Objectiu:** entendre el problema
 
 Tasques:
@@ -113,7 +113,7 @@ Tasques:
 
 ---
 
-### Sprint 2 — Disseny
+### Sprint 2 �?Disseny
 **Objectiu:** estructurar la BD
 
 Tasques:
@@ -124,7 +124,7 @@ Tasques:
 
 ---
 
-### Sprint 3 — Implementació SQL
+### Sprint 3 �?Implementació SQL
 **Objectiu:** crear la base de dades
 
 Tasques:
@@ -134,7 +134,7 @@ Tasques:
 
 ---
 
-### Sprint 4 — Dades i validació
+### Sprint 4 �?Dades i validació
 **Objectiu:** finalitzar el sistema
 
 Tasques:
@@ -147,7 +147,7 @@ Tasques:
 
 ## 🧪 Exemple de microtasques
 
-### 📚 Biblioteca — Taula Llibres
+### 📚 Biblioteca �?Taula Llibres
 
 - Definir atributs
 - Definir clau primària
@@ -170,7 +170,7 @@ Tasques:
 
 ---
 
-## 🗣️ Reunió diària (Daily Scrum)
+## 🗣�?Reunió diària (Daily Scrum)
 
 Durada: **5 minuts màxim**
 
@@ -241,7 +241,7 @@ Cada equip haurà d’entregar:
 
 ---
 
-## ⭐ Avaluació entre alumnes (rúbrica)
+## �?Avaluació entre alumnes (rúbrica)
 
 Cada alumne avaluarà els companys amb aquesta rúbrica:
 
