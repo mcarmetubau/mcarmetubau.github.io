@@ -5,180 +5,47 @@ categories: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases 
 tags: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades, ASIX, FP, Dades, BBDD, DDL, eunciat, tasca,practica, mysql]
 ---
 
-
-# Pràctica: Modelatge de base de dades — Associació excursionista **SALTAMUNTANYA**
+# Pràctica: Modelatge conceptual d’una base de dades — Associació excursionista SALTAMUNTANYA
 
 ## Enunciat
 
-L’associació excursionista **SALTAMUNTANYA** us sol·licita dissenyar una base de dades que permeti gestionar la informació relacionada amb les rutes que organitzen, els socis de l’associació, els guies i les activitats realitzades durant la temporada.
+L’associació excursionista **SALTAMUNTANYA** us sol·licita organitzar la informació de les rutes que realitzen, així com les dades dels seus socis.
 
-A partir de la informació que us faciliten, haureu d’**analitzar els requisits** i **modelar la base de dades**, identificant les entitats, atributs, relacions, cardinalitats i restriccions necessàries.
-
----
-
-# Informació disponible
-
-## Socis
-
-Els socis s’identifiquen mitjançant el seu **DNI**.
-
-De cada soci es vol emmagatzemar:
-
-* DNI
-* Nom
-* Cognoms
-* Data de naixement
-* Correu electrònic
-* Telèfon
-* Data d’alta a l’associació
+A partir de la informació descrita a continuació, haureu de dissenyar la base de dades corresponent i modelar-la mitjançant un **diagrama Entitat-Relació**.
 
 ---
 
-## Rutes
+Els socis s’han d’identificar pel seu DNI i d’ells es vol conèixer el nom i cognoms, la data de naixement, el correu electrònic, el telèfon i la data d’alta a l’associació.
 
-De cadascuna de les rutes es vol conèixer:
+De cadascuna de les rutes que es realitzen es vol conèixer la ciutat d’origen i de destí, així com una altra ciutat intermèdia per la qual passa. També es vol registrar el nombre de quilòmetres. Cada ruta té un nom i un codi que la identifica.
 
-* Codi identificador
-* Nom de la ruta
-* Ciutat d’origen
-* Ciutat de destí
-* Una ciutat intermèdia per la qual passa
-* Nombre de quilòmetres
-* Nivell de dificultat (**alta**, **mitjana** o **baixa**)
+De cada ciutat es vol enregistrar el seu nom, el codi postal i la comarca a la qual pertany.
 
----
+Per cada ruta hi ha un guia que n’és el responsable i que treballa per a l’associació. D’aquest guia es vol conèixer la mateixa informació que dels socis, excepte la data d’alta a l’associació. A més, també es vol enregistrar la titulació, la data d’inici i fi de contracte, i el sou.
 
-## Ciutats
+Els socis realitzen una ruta en una data determinada, podent repetir tantes vegades com es vulgui una mateixa ruta en dates diferents. Caldrà també emmagatzemar el temps que ha invertit cada soci en realitzar la ruta.
 
-De cada ciutat es vol registrar:
+Cada ruta només pot tenir un guia responsable en una data determinada, però cada guia ha de poder coordinar qualsevol de les rutes existents. A més, es vol mantenir un històric de cadascuna de les rutes realitzades, indicant en quina data es va dur a terme.
 
-* Nom
-* Codi postal
-* Comarca a la qual pertany
+Cada ruta té un nivell de dificultat que pot ser **alta**, **mitjana** o **baixa**. Per al nivell de dificultat **alt**, cal disposar d’un equipament determinat. D’aquest equipament cal emmagatzemar el codi de producte, el nom i la descripció.
 
----
+Per cadascuna de les rutes que es realitzen en una data determinada, cadascun dels socis participants té assignat un company **mastersoci** que el representa i que serà l’encarregat de contactar amb el guia i informar els socis sobre la indumentària necessària, l’horari, el punt de trobada i qualsevol altra particularitat relacionada amb la ruta.
 
-## Guies
+Un mateix soci pot actuar com a mastersoci en més d’una ruta en diferents dates, i també pot tornar a ser mastersoci d’una mateixa ruta realitzada anteriorment.
 
-Cada ruta té assignat un **guia responsable**.
-
-Els guies treballen per a l’associació.
-
-De cada guia es vol conèixer:
-
-* DNI
-* Nom
-* Cognoms
-* Data de naixement
-* Correu electrònic
-* Telèfon
-* Titulació
-* Data d’inici de contracte
-* Data de finalització de contracte
-* Sou
-
----
-
-## Participació dels socis a les rutes
-
-Els socis poden participar en rutes en dates concretes.
-
-Cal tenir en compte que:
-
-* una mateixa ruta es pot repetir diverses vegades en dates diferents;
-* un soci pot realitzar una mateixa ruta més d’una vegada si aquesta es repeteix;
-* cal registrar el **temps invertit per cada soci** en completar la ruta.
-
----
-
-## Històric de rutes dels guies
-
-Es vol mantenir un històric que permeti saber:
-
-* quin guia ha coordinat cada ruta;
-* i en quina data s’ha realitzat.
-
-Cada ruta només pot tenir **un guia responsable en una data determinada**, però un mateix guia pot coordinar diferents rutes al llarg del temps.
-
----
-
-## Equipament segons dificultat
-
-Cada ruta té associat un nivell de dificultat:
-
-* Baixa
-* Mitjana
-* Alta
-
-Per a les rutes de dificultat **alta**, cal disposar d’un equipament específic.
-
-De cada equipament es vol guardar:
-
-* Codi de producte
-* Nom
-* Descripció
-
----
-
-## Figura del “mastersoci”
-
-Per cada ruta realitzada en una data concreta, cadascun dels socis participants tindrà assignat un **mastersoci**, que serà el responsable de representar el grup i actuar com a persona de contacte amb el guia.
-
-El mastersoci serà l’encarregat d’informar sobre:
-
-* indumentària necessària;
-* horari;
-* punt de trobada;
-* altres particularitats relacionades amb la ruta.
-
-Cal tenir en compte que:
-
-* un mateix soci pot actuar com a mastersoci en diverses rutes diferents;
-* també pot tornar a ser mastersoci en una mateixa ruta feta anteriorment en una altra data.
+Els socis del centre excursionista poden realitzar diverses rutes al llarg de la temporada i, per fer-les, poden rebre assessorament del personal que té el càrrec de guia.
 
 ---
 
 # Tasca a realitzar
 
-A partir d’aquest enunciat es demana:
+A partir de la informació descrita:
 
-## 1. Anàlisi dels requisits
-
-Identificar la informació rellevant del problema i les necessitats que cal cobrir amb la base de dades.
-
----
-
-## 2. Disseny conceptual
-
-Realitzar el **model entitat-relació (E/R)** indicant:
-
-* entitats
-* atributs
-* claus primàries
-* relacions
-* cardinalitats
-* atributs de relació, si n’hi ha
-
----
-
-## 3. Disseny lògic
-
-Transformar el model conceptual en **model relacional**, definint:
-
-* taules
-* claus primàries
-* claus foranes
-
----
-
-## 4. Justificació del model
-
-Acompanyar el diagrama amb una breu explicació de les decisions preses durant el modelatge:
-
-* com s’han identificat les entitats;
-* com s’han interpretat les relacions;
-* quines cardinalitats s’han definit;
-* i per què s’ha triat aquesta proposta de model.
+* analitzeu els requisits del sistema;
+* identifiqueu quina informació cal emmagatzemar;
+* proposeu el **model Entitat-Relació** corresponent;
+* indiqueu atributs, claus, relacions i cardinalitats;
+* i transformeu posteriorment el model conceptual al model relacional.
 
 ---
 
@@ -186,24 +53,14 @@ Acompanyar el diagrama amb una breu explicació de les decisions preses durant e
 
 > **Aquest exercici no té una única solució correcta.**
 
-L’objectiu de la pràctica no és que tot el grup arribi exactament al mateix model, sinó **analitzar el problema, interpretar-lo i prendre decisions de disseny justificades**.
+L’objectiu de la pràctica és interpretar l’enunciat i prendre decisions de modelatge justificades a partir de la informació proporcionada.
 
 Per tant:
 
-* poden existir diferents solucions vàlides;
-* poden aparèixer models diferents segons la interpretació feta;
-* i diverses propostes poden ser correctes si representen adequadament la informació del problema.
+* poden existir diferents propostes vàlides;
+* diferents grups poden arribar a models diferents;
+* i diverses solucions poden ser correctes si permeten representar adequadament el problema plantejat.
 
-Ara bé, sí que hi pot haver **solucions incorrectes**, especialment quan el model:
+Ara bé, sí que hi pot haver **solucions errònies**, especialment si el model no permet representar tota la informació descrita o si introdueix incoherències.
 
-* no permet representar alguna part de la informació de l’enunciat;
-* perd informació important;
-* genera incoherències;
-* o impossibilita registrar casos descrits al problema.
-
-Per aquest motiu es valorarà especialment:
-
-* la coherència global del model;
-* la capacitat de representar correctament tota la informació;
-* la identificació adequada de relacions i cardinalitats;
-* i la justificació raonada de les decisions de modelatge adoptades.
+Per aquest motiu, es valorarà especialment la capacitat de **justificar les decisions i interpretacions adoptades durant el procés de modelatge**.
