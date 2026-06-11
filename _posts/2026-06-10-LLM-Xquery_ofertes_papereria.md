@@ -1,6 +1,6 @@
 ---
 title: "Activitat XQuery sobre el document XML d'ofertes"
-date: 2026-06-11 10:00:00 +0100
+date: 2026-06-10 10:00:00 +0100
 categories: [Administració de Sistemes Informàtics en Xarxa, Llenguatge de Marques]
 tags: [Administració de Sistemes Informàtics en Xarxa, Llenguatge de Marques, ASIX, XQUERY, FP, Activitat, Tasca, Pràctica]
 ---
