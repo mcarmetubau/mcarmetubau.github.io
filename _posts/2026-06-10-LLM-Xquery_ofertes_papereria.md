@@ -26,6 +26,9 @@ RA
 
 L'objectiu d'aquesta activitat és realitzar diverses consultes utilitzant el llenguatge **XQuery** sobre un document XML que conté informació de diferents productes d'oficina. A partir de les dades proporcionades, es plantegen diverses consultes per filtrar, ordenar i calcular informació rellevant dels productes.
 
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <OFERTES> <PRODUCTE CODI="BO35" CATEGORIA="Bolígrafs"> <NOM>FriXion Clicker</NOM> <IMATGE>https://m.media-amazon.com/images/I/81xI9I+vO1L._AC_UL320_.jpg</IMATGE> <URL>https://www.boli.es/frixion-clicker/</URL> <PRESENTACIO>Pack</PRESENTACIO> <UNITATS>3</UNITATS> <MARCA>Pilot</MARCA> <VALORACIO>4,4</VALORACIO> <PREU>7,49 €</PREU> </PRODUCTE> <PRODUCTE CODI="AG29" CATEGORIA="Agendes"> <NOM>Daily Plan</NOM> <IMATGE>https://m.media-amazon.com/images/I/91egWHhenzL._AC_UL320_.jpg</IMATGE> <URL>https://salamancamovil.com/producto/eono-by-amazon-agenda-2021/</URL> <PRESENTACIO></PRESENTACIO> <UNITATS>1</UNITATS> <MARCA>Eono</MARCA> <VALORACIO>4,9</VALORACIO> <PREU>12,29 €</PREU> </PRODUCTE> <PRODUCTE CODI="QU63" CATEGORIA="Quaderns"> <NOM>Open Flex</NOM> <IMATGE>https://m.media-amazon.com/images/I/91mWo-lHUDL._AC_UL320_.jpg</IMATGE> <URL>https://www.my-oxford.com/es-es/oxford-openflex</URL> <PRESENTACIO>Pack</PRESENTACIO> <UNITATS>10</UNITATS> <MARCA>Oxford</MARCA> <VALORACIO>4,6</VALORACIO> <PREU>20,46 €</PREU> </PRODUCTE> </OFERTES>
+```
 ---
 
 ## 1. Productes que no pertanyen a la categoria "Agendes"
