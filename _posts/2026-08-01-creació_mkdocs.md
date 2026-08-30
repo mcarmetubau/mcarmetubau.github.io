@@ -443,14 +443,13 @@ nav:
 - API: 
 - Referència: api/referència.md 
 - Sobre: ​​sobre.md
-```
-
+``
 
 ### 6.4. Escriure contingut a Markdown
 
 El contingut s'escriu en fitxers Markdown (`.md`) dins del directori `docs/`. MkDocs suporta la sintaxi estàndard de Markdown i extensions addicionals:
 
-````markdown
+`````markdown
 # Títol principal
 
 ## Subtítol
@@ -469,7 +468,8 @@ Text normal amb **negreta** i *cursiva*.
 
 ```markdown
 Bloc de codi
-
+```
+`````
 
 ---
 
@@ -481,40 +481,42 @@ El tema Material ofereix moltes funcionalitats addicionals:
 
 #### Advertiments i notes
 
-`` markdown
-!!! note "Nota" 
-Aquest és un text de nota important.
+`````markdown
+!!! note "Nota"
+    Aquest és un text de nota important.
 
-!!! warning "Advertiment" 
-Aneu amb compte amb això.
+!!! warning "Advertiment"
+    Aneu amb compte amb això.
 
-!!! tip "Consell" 
-Un consell útil.
+!!! tip "Consell"
+    Un consell útil.
 
-!!! danger "Perill" 
-Això és perillós.
-```
+!!! danger "Perill"
+    Això és perillós.
+`````
 
 #### Pestanyes
 
-``` markdown
-=== "Opció 1" 
-Contingut de l'opció 1
+`````markdown
+=== "Opció 1"
 
-=== "Opció 2" 
-Contingut de l'opció 2
-```
+    Contingut de l'opció 1
+
+=== "Opció 2"
+
+    Contingut de l'opció 2
+`````
 
 #### Codi amb ressaltat de sintaxi
 
 El tema Material suporta ressaltat de sintaxi per a molts llenguatges:
 
-```` markdown
-``` python
-def funcio(): 
-return "Hola món"
+`````markdown
+```python
+def funcio():
+    return "Hola món"
 ```
-````
+`````
 
 ### 7.2. Plugins addicionals
 
@@ -527,16 +529,16 @@ MkDocs suporta plugins que afegeixen funcionalitats:
 
 Per instal·lar un plugin:
 
-``` bash
+```bash
 pip install nom-del-plugin
-````
+```
 
 I afegir-lo a `mkdocs.yml`:
 
-`` yaml
-plugins: 
-- nom-del-plugin
-````
+```yaml
+plugins:
+  - nom-del-plugin
+```
 
 ---
 
@@ -548,6 +550,7 @@ plugins:
 - **Noms descriptius:** Fes servir noms de fitxer descriptius
 - **Jerarquia:** Respecta la jerarquia de títols (H1, H2, H3)
 - **Índex:** Mantingues un índex clar en la navegació
+
 
 ### 8.2. Versionat amb Git
 
