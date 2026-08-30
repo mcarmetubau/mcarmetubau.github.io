@@ -175,7 +175,7 @@ nom-del-projecte/
 ### 3.2. Estructura de directoris
 
 L’estructura típica d’un projecte MkDocs és:
-
+````
 nom-del-projecte/
 ├── docs/              # Directori amb els fitxers Markdown
 │   ├── index.md       # Pàgina principal
@@ -183,9 +183,10 @@ nom-del-projecte/
 │   └── ...
 ├── mkdocs.yml         # Fitxer de configuració
 └── site/              # Directori generat (no es versiona)
-└── ...            # HTML generat
+└── ...                # HTML generat
+````
 
-Codi
+
 
 **docs/**: Conté tots els fitxers Markdown que formen el contingut del lloc  
 **mkdocs.yml**: Fitxer de configuració principal  
@@ -466,10 +467,10 @@ Text normal amb **negreta** i *cursiva*.
 
 ![Imatge](ruta/imatge.png)
 
-```` markdown
+``` markdown
 Bloc de codi
-````
 ```
+``
 
 ---
 
