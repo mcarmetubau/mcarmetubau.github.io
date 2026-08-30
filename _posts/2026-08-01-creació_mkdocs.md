@@ -428,22 +428,21 @@ mkdocs build
 ````
 
 Això crea el directori `site/` amb tots els fitxers HTML, CSS i JavaScript necessaris.
-
 ### 6.3. Estructura de navegació
 
 La navegació es defineix al fitxer `mkdocs.yml`:
 
-`` yaml
-nav: 
-- Inici: index.md 
-- Guia d'usuari: 
-- Introducció: guia/introduccio.md 
-- Instal·lació: guia/instalacio.md 
-- Configuració: guia/configuracio.md 
-- API: 
-- Referència: api/referència.md 
-- Sobre: ​​sobre.md
-``
+```yaml
+nav:
+  - Inici: index.md
+  - Guia d'usuari:
+      - Introducció: guia/introduccio.md
+      - Instal·lació: guia/instalacio.md
+      - Configuració: guia/configuracio.md
+  - API:
+      - Referència: api/referencia.md
+  - Sobre: sobre.md
+```
 
 ### 6.4. Escriure contingut a Markdown
 
