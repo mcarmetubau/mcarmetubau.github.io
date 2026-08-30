@@ -1,9 +1,18 @@
 ---
-title: "Generació de llocs web estàtics amb MkDocs i el tema Material. Instal·lació, configuració i desplegament a GitHub "
+title: "Tasca: Generació de llocs web estàtics amb MkDocs i el tema Material. Instal·lació, configuració i desplegament a GitHub "
 date: 2026-08-01 10:00:00 +0100
 categories: [Administració de Sistemes Informàtics en Xarxa, Desenvolupament WEB]
-tags: [ASIX, Desenvolupament,WEB,MKDOCS]
+tags: [ASIX, Desenvolupament,WEB,MKDOCS,ASIX, FP, Tasca, Pràctica]
+
 ---
+
+## Informació sobre la tasca
+
+El lliurament serà en format PDF. Llegir [Lliurament i presentació de tasques](/posts/entrega-presentacio-tasques/).
+
+La tasca es qualifica amb una nota d'APTE (10) o NO APTE (0).
+
+Durada activitats obligatòries: 6 hores.
 
 
 # MkDocs
