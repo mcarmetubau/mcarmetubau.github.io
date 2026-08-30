@@ -445,12 +445,12 @@ nav:
 - Sobre: ​​sobre.md
 ```
 
+
 ### 6.4. Escriure contingut a Markdown
 
 El contingut s'escriu en fitxers Markdown (`.md`) dins del directori `docs/`. MkDocs suporta la sintaxi estàndard de Markdown i extensions addicionals:
 
-``` markdown
-
+````markdown
 # Títol principal
 
 ## Subtítol
@@ -467,10 +467,9 @@ Text normal amb **negreta** i *cursiva*.
 
 ![Imatge](ruta/imatge.png)
 
-``` markdown
+```markdown
 Bloc de codi
-```
-``
+
 
 ---
 
