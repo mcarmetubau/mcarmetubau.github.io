@@ -1,7 +1,7 @@
 ---
 title: "Tasca: Generació de llocs web estàtics amb MkDocs i el tema Material. Instal·lació, configuració i desplegament a GitHub "
 date: 2026-08-01 10:00:00 +0100
-categories: [Administració de Sistemes Informàtics en Xarxa, Desenvolupament WEB]
+categories: [Administració de Sistemes Informàtics en Xarxa, Implantació d’aplicacions web]
 tags: [ASIX, Desenvolupament,WEB,MKDOCS,ASIX, FP, Tasca, Pràctica]
 
 ---
