@@ -10,6 +10,9 @@ tags: [Administració de Sistemes Informàtics en Xarxa, Llenguatge de Marques, 
 El lliurament serà en format PDF. Llegir [Lliurament i presentació de tasques](/posts/entrega-presentacio-tasques/).
 
 
+Abans de fer el lliurament, heu de comprovar la validesa del document resultant a [XML Validation](http://www.xmlvalidation.com/?L=0).
+
+
 ## Qualificació
 
 La tasca es qualificarà amb una nota de 0 a 10.
@@ -19,7 +22,7 @@ La tasca es qualificarà amb una nota de 0 a 10.
 ### Activitat 1
 
 Estructureu en format XML les dades que es mostren a continuació i que fan referència a una llista d’empleats d’una empresa d’informàtica.
-[Llista empleats](../assets/mostra_csv.png).
+
 #### Instruccions
 
 * Ha de contenir només les dades contingudes en el fitxer CSV original (no se n’han d’afegir d’altres).
@@ -27,6 +30,7 @@ Estructureu en format XML les dades que es mostren a continuació i que fan refe
 * El document ha de disposar d’una capçalera adequada que indiqui la codificació que s’ha d’utilitzar, per tal de poder ser visualitzat correctament en funció dels caràcters que contingui.
 
 Es valorarà la correcta indentació del codi font, que reflecteixi l’estructura jeràrquica del document XML resultant.
+ 
 
 
 > Temps aproximat de resolució: 45 minuts.
@@ -35,7 +39,7 @@ Es valorarà la correcta indentació del codi font, que reflecteixi l’estructu
 ### Activitat 2
 
 En funció de l’estructura d’arbre proporcionada en el diagrama següent, construïu un document XML que emmagatzemi correctament les dades que s’hi mostren, corresponents a una llista de sucursals d’una empresa d’informàtica (tot i que, per raons d’espai, només es mostren de manera resumida les dades corresponents a una sola sucursal).
-[Estructura arbre XML](../assets/EstructuraDBLAN.png).
+
 
 
 Utilitzeu elements i atributs per emmagatzemar les dades, segons es desprengui del diagrama en cada cas, tot respectant l’estructura jeràrquica existent entre els diferents elements i entre cada element i els seus atributs, quan sigui necessari:
