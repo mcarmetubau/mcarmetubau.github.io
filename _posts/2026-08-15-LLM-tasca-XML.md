@@ -10,6 +10,8 @@ tags: [Administració de Sistemes Informàtics en Xarxa, Llenguatge de Marques, 
 El lliurament serà en format PDF. Llegir [Lliurament i presentació de tasques](/posts/entrega-presentacio-tasques/).
 
  
+Abans de fer el lliurament, heu de comprovar la validesa del document resultant a [XML Validation](http://www.xmlvalidation.com/?L=0).
+
 
 ## Qualificació
 
