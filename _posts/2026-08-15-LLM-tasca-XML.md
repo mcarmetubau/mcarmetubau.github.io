@@ -21,6 +21,9 @@ La tasca es qualificarà amb una nota de 0 a 10.
 
 Estructureu en format XML les dades que es mostren a continuació i que fan referència a una llista d’empleats d’una empresa d’informàtica.
 
+
+[Llista empleats](../assets/mostra_csv.png).
+
 #### Instruccions
 
 * Ha de contenir només les dades contingudes en el fitxer CSV original (no se n’han d’afegir d’altres).
