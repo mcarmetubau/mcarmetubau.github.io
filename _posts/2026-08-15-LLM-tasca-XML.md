@@ -7,7 +7,8 @@ tags: [Administració de Sistemes Informàtics en Xarxa, Llenguatge de Marques, 
 
 ## Lliurament i presentació
 
-El lliurament serà en format PDF. Llegiu [Lliurament i presentació de tasques](/posts/entrega-presentacion-tareas/).
+El lliurament serà en format PDF. Llegir [Lliurament i presentació de tasques](/posts/entrega-presentacio-tasques/).
+
 
 ## Qualificació
 
