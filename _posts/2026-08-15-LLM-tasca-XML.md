@@ -39,9 +39,8 @@ Es valorarà la correcta indentació del codi font, que reflecteixi l’estructu
 
 En funció de l’estructura d’arbre proporcionada en el diagrama següent, construïu un document XML que emmagatzemi correctament les dades que s’hi mostren, corresponents a una llista de sucursals d’una empresa d’informàtica (tot i que, per raons d’espai, només es mostren de manera resumida les dades corresponents a una sola sucursal).
 
-[Estructura arbre XML](../assets/img/EstructuraDBLAN.jpg).
-
-
+![Estructura arbre XML](../assets/img/EstructuraDBLAN.jpg).
+ 
 Utilitzeu elements i atributs per emmagatzemar les dades, segons es desprengui del diagrama en cada cas, tot respectant l’estructura jeràrquica existent entre els diferents elements i entre cada element i els seus atributs, quan sigui necessari:
 
 * Els elements estan representats per rectangles i els seus valors dins d’el·lipses.
