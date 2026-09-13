@@ -22,8 +22,6 @@ La tasca es qualificarà amb una nota de 0 a 10.
 Estructureu en format XML les dades que es mostren a continuació i que fan referència a una llista d’empleats d’una empresa d’informàtica.
 
 
-[Llista empleats](../assets/mostra_csv.png).
-
 #### Instruccions
 
 * Ha de contenir només les dades contingudes en el fitxer CSV original (no se n’han d’afegir d’altres).
@@ -41,6 +39,7 @@ Es valorarà la correcta indentació del codi font, que reflecteixi l’estructu
 
 En funció de l’estructura d’arbre proporcionada en el diagrama següent, construïu un document XML que emmagatzemi correctament les dades que s’hi mostren, corresponents a una llista de sucursals d’una empresa d’informàtica (tot i que, per raons d’espai, només es mostren de manera resumida les dades corresponents a una sola sucursal).
 
+[Estructura arbre XML](../assets/EstructuraDBLAN.png).
 
 
 Utilitzeu elements i atributs per emmagatzemar les dades, segons es desprengui del diagrama en cada cas, tot respectant l’estructura jeràrquica existent entre els diferents elements i entre cada element i els seus atributs, quan sigui necessari:
