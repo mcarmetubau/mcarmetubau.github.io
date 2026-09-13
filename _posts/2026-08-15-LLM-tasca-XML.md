@@ -28,7 +28,6 @@ Estructureu en format XML les dades que es mostren a continuació i que fan refe
 
 Es valorarà la correcta indentació del codi font, que reflecteixi l’estructura jeràrquica del document XML resultant.
 
-Abans de fer el lliurament, heu de comprovar la validesa del document resultant a [XML Validation](http://www.xmlvalidation.com/?L=0).
 
 > Temps aproximat de resolució: 45 minuts.
 > {:.prompt-info}
@@ -49,8 +48,6 @@ La solució ha de contenir només les dades contingudes en el diagrama original 
 A més, el document ha de disposar d’una capçalera adequada que indiqui la codificació que s’ha d’utilitzar, per tal de poder ser visualitzat correctament en funció dels caràcters que contingui.
 
 Es valorarà la correcta indentació del codi font, que reflecteixi l’estructura jeràrquica del document XML resultant.
-
-Abans de fer el lliurament, heu de comprovar la validesa del document resultant a [XML Validation](http://www.xmlvalidation.com/?L=0).
 
 > Temps aproximat de resolució: 1,5 h.
 > {:.prompt-info}
