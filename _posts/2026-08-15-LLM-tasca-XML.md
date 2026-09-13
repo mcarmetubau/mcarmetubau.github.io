@@ -3,7 +3,6 @@ title: "Tasca: Introducció a XML"
 date: 2026-08-15 9:00:00 +0100
 categories: [Administració de Sistemes Informàtics en Xarxa, Llenguatge de Marques]
 tags: [Administració de Sistemes Informàtics en Xarxa, Llenguatge de Marques, ASIX, XML, FP, Activitat, Tasca, Pràctica]
-img_path: /assets/img/tarea-01-introduccion-xml/
 ------------------------------------------------
 
 ## Lliurament i presentació
