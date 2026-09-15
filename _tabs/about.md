@@ -11,7 +11,7 @@ Aquest espai és el meu punt de trobada per explorar idees, compartir coneixemen
 Si valores el contingut i vols donar suport al projecte, pots fer-ho de diverses maneres:
 
 — Convidant-me a un cafè virtual ☕
-[buymeacoffee.com/mcarmetubau](http://ko-fi.com/mcarmetubau). 
+[buymeacoffee.com/mcarmetubau](https://ko-fi.com/mcarmetubau). 
 ko-fi.com/mcarmetubau
 — Compartint el contingut amb altres professionals o persones interessades en tecnologia i educació
 
