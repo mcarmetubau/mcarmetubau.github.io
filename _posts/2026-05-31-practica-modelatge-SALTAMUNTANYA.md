@@ -1,5 +1,5 @@
 ---
-title: "Enunciat modelatge de base de dades - SALTAMUNTANYA"
+title: "Modelatge conceptual d’una base de dades - SALTAMUNTANYA"
 date: 2026-05-31 10:00:00 +0100
 categories: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades]
 tags: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades, ASIX, FP, Dades, BBDD, DDL, Enunciat, tasca,practica, mysql]
