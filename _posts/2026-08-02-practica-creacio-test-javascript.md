@@ -1,7 +1,7 @@
 ---
 title: "Tasca: Programació en JavaScript. Automatització correcció test "
 date: 2026-08-02 9:00:00 +0100
-categories: [Administració de Sistemes Informàtics en Xarxa, Implantació aplicacions WEB]
+categories: [Administració de Sistemes Informàtics en Xarxa, Implantació d’aplicacions web]
 tags: [Administració de Sistemes Informàtics en Xarxa, Implantació aplicacions WEB, ASIX, FP, Aplicacions, WEB, Tasca, Pràctica]
 ---
 

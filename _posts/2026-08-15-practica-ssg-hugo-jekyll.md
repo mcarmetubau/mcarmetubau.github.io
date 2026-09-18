@@ -1,7 +1,7 @@
 ---
 title: "Tasca: Creació i publicació d'una web estàtica amb GitHub Pages "
 date: 2026-05-09 9:00:00 +0100
-categories: [Administració de Sistemes Informàtics en Xarxa, Implentació desenvolupament WEB]
+categories: [Administració de Sistemes Informàtics en Xarxa, Implantació d’aplicacions web]
 tags: [Administració de Sistemes Informàtics en Xarxa, Implantació d’aplicacions web, ASIX, FP, WEB, Implantació , Tasca, Pràctica, GitHub, Markdown, SSG, GitHubPages]
 ---
 
