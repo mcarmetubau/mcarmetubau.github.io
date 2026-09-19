@@ -17,21 +17,21 @@ La tasca es qualificarà amb una nota de 0 a 10.
 
 ## Activitats
 
-Quina definició trobem a la wikipedia (es) del concepte [*"Base de datos"*](https://es.wikipedia.org/wiki/Base_de_datos)?
+1. Quina definició trobem a la wikipedia (es) del concepte [*"Base de datos"*](https://es.wikipedia.org/wiki/Base_de_datos)?
 
-1. Argumenta si en una base de dades es pot guardar tota la informació del món real. Posa un exemple que justifiqui la teva resposta.
+2. Argumenta si en una base de dades es pot guardar tota la informació del món real. Posa un exemple que justifiqui la teva resposta.
 
-2. Quins models de base de dades trobem a la wikipedia? Quin és el tret principal de cada model?
+3. Quins models de base de dades trobem a la wikipedia? Quin és el tret principal de cada model?
 
-3. Quina definició trobem a la wikipedia (es) del concepte [*"Sistema Gestor de Base de datos"*](https://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_bases_de_datos)? "Quins són els avantatges i inconvenients d'un sistema gestor de bases de dades segons la Wikipedia"?
+4. Quina definició trobem a la wikipedia (es) del concepte [*"Sistema Gestor de Base de datos"*](https://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_bases_de_datos)? "Quins són els avantatges i inconvenients d'un sistema gestor de bases de dades segons la Wikipedia"?
 
-4. Quina definició trobem a la wikipedia (es) del concepte [*"Base de datos relacional"*](https://es.wikipedia.org/wiki/Base_de_datos_relacional)?
+5. Quina definició trobem a la wikipedia (es) del concepte [*"Base de datos relacional"*](https://es.wikipedia.org/wiki/Base_de_datos_relacional)?
 
-5. [Aquí trobaràs llibres clàssics de ciències de la computació](http://dl.acm.org/classics.cfm?CFID=243428645\&CFTOKEN=16699042). Fes una ullada al llibre *"The relational model for database management: version 2"*. Qui signa aquest llibre? Fes una ullada de la biografia de l'autor del llibre a la wikipedia.
+6. [Aquí trobaràs llibres clàssics de ciències de la computació](http://dl.acm.org/classics.cfm?CFID=243428645\&CFTOKEN=16699042). Fes una ullada al llibre *"The relational model for database management: version 2"*. Qui signa aquest llibre? Fes una ullada de la biografia de l'autor del llibre a la wikipedia.
 
-6. L'arquitectura ANSI/X3/SPARC. Fes una ullada l'article de la wikipedia: [http://en.wikipedia.org/wiki/ANSI-SPARC_Architecture](http://en.wikipedia.org/wiki/ANSI-SPARC_Architecture). Quants i quins nivells defineix?
+7. L'arquitectura ANSI/X3/SPARC. Fes una ullada l'article de la wikipedia: [http://en.wikipedia.org/wiki/ANSI-SPARC_Architecture](http://en.wikipedia.org/wiki/ANSI-SPARC_Architecture). Quants i quins nivells defineix?
 
-7. En una cursa es guarden les dades dels diferents participants. En aquesta cursa hi ha dos competicions diferents: 20km i 10km.
+8. En una cursa es guarden les dades dels diferents participants. En aquesta cursa hi ha dos competicions diferents: 20km i 10km.
 
    | **ID** | **NOM** | **COGNOM** | **DNI** | **GENERE** | **MODALITAT** | **TELF** | **EMAIL** | **DATA_NAIX** | **ALTRES** |
    |---|---|---|---|---|---|---|---|---|---|
@@ -40,18 +40,18 @@ Quina definició trobem a la wikipedia (es) del concepte [*"Base de datos"*](htt
 
    Indica el **nombre de registres** i el **nombre de camps** que té la taula.
 
-8. Indica quin podria ser el camp clau (clau primària) i quins poden ser claus candidates.
+9. Indica quin podria ser el camp clau (clau primària) i quins poden ser claus candidates.
 
    | **ID** | **NOM** | **COGNOM** | **DNI** | **GENERE** | **MODALITAT** | **TELF** | **EMAIL** | **DATA_NAIX** | **ALTRES** |
    |---|---|---|---|---|---|---|---|---|---|
    | 1 | Pere | Pi | 12345678 | Home | 10km | 666555444 | ppi@cursa.cat | 15/02/2006 | NULL |
    | 2 | Marta | Bosch | 123789456 | Dona | 20km | 666111222 | mbosch@cursa.cat | 23/06/2004 | NULL |
 
-9. Indica quins atributs poden tenir valor **NULL** i quins no en poden tenir. *Justifica les respostes*.
+10. Indica quins atributs poden tenir valor **NULL** i quins no en poden tenir. *Justifica les respostes*.
 
    | **ID** | **NOM** | **COGNOM** | **DNI** | **GENERE** | **MODALITAT** | **TELF** | **EMAIL** | **DATA_NAIX** | **ALTRES** |
    |---|---|---|---|---|---|---|---|---|---|
    | 1 | Pere | Pi | 12345678 | Home | 10km | 666555444 | ppi@cursa.cat | 15/02/2006 | NULL |
    | 2 | Marta | Bosch | 123789456 | Dona | 20km | 666111222 | mbosch@cursa.cat | 23/06/2004 | NULL |
 
-10. Digues els objectius indispensables que un SGBD ha d'assolir necessàriament.
+11. Digues els objectius indispensables que un SGBD ha d'assolir necessàriament.

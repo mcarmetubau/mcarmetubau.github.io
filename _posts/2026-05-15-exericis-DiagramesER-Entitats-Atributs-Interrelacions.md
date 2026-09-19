@@ -13,7 +13,8 @@ La tasca es qualifica com a APTE  o NO APTE .
 
 Durada activitats obligatòries: 2 hores.
 
-RA 2: Disseny models lògics normalitzats interpretant diagrames d’entitat/relació
+RA 1: Reconeixer els elements de les bases de dades analitzant-ne les funcions i valorant la utilitat dels sistemes gestors 
+
 
 # Disseny conceptual 
 
