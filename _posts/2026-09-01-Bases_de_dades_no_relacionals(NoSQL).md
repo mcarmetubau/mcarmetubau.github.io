@@ -76,7 +76,7 @@ Atès que en un sistema distribuït la **tolerància a la partició** és obliga
 
 Les bases de dades clau-valor són altament divisibles i permeten un escalat horitzontal a escales que altres tipus de bases de dades no poden assolir.
 
-![Clau valor](../assets/img/clau_valor.png).
+![Clau valor](../assets/img/clau_valor.png) .
 
 
 > Imatge: Exemple d’una base de dades clau-valor. [**Amazon Web Services**](https://aws.amazon.com/es/nosql/).
@@ -286,7 +286,7 @@ Les bases de dades no relacionals basades en grafs utilitzen **nodes** per emmag
 Aquest exemple mostra com seria el graf d’una xarxa social. Les persones serien els nodes i les seves relacions serien les arestes. D’aquesta manera, és possible saber qui són els amics dels amics d’una persona específica.
 
 
-![Grafs](../assets/img/grafs.png).
+![Grafs](../assets/img/grafs.png) .
 
 > Imatge: Exemple d’una base de dades basada en grafs. [**Amazon Web Services**](https://aws.amazon.com/es/nosql/).
 
