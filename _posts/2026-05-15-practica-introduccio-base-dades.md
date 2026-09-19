@@ -27,9 +27,9 @@ La tasca es qualificarà amb una nota de 0 a 10.
 
 5. Quina definició trobem a la wikipedia (es) del concepte [*"Base de datos relacional"*](https://es.wikipedia.org/wiki/Base_de_datos_relacional)?
 
-6. [Aquí trobaràs llibres clàssics de ciències de la computació](http://dl.acm.org/classics.cfm?CFID=243428645\&CFTOKEN=16699042). Fes una ullada al llibre *"The relational model for database management: version 2"*. Qui signa aquest llibre? Fes una ullada de la biografia de l'autor del llibre a la wikipedia.
+6. [Aquí trobaràs llibres clàssics de ciències de la computació](https://dl.acm.org/classics.cfm). Fes una ullada al llibre *"The relational model for database management: version 2"*. Qui signa aquest llibre? Fes una ullada de la biografia de l'autor del llibre a la wikipedia. 
 
-7. L'arquitectura ANSI/X3/SPARC. Fes una ullada l'article de la wikipedia: [http://en.wikipedia.org/wiki/ANSI-SPARC_Architecture](http://en.wikipedia.org/wiki/ANSI-SPARC_Architecture). Quants i quins nivells defineix?
+7. L'arquitectura ANSI/X3/SPARC. Fes una ullada l'article de la wikipedia: [ANSI-SPARC Architecture](https://en.wikipedia.org/wiki/ANSI-SPARC_Architecture). Quants i quins nivells defineix?
 
 8. En una cursa es guarden les dades dels diferents participants. En aquesta cursa hi ha dos competicions diferents: 20km i 10km.
 
