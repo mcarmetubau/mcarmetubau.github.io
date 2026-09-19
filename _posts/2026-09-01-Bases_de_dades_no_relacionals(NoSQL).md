@@ -2,7 +2,7 @@
 title: "Tasca:Bases de dades no relacionals (NoSQL)"
 date: 2026-09-01 9:00:00 +0100
 categories: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades]
-tags: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades, ASIX, FP, Dades, BBDD, Tasca, Pràctica]
+tags: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades, ASIX, FP, Dades, BBDD, Tasca, Pràctica,Mongo,Redis,Docker,Neo4j,graf,Cassandra]
 ---
 
 ## Informació sobre la tasca
