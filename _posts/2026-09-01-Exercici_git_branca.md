@@ -46,9 +46,6 @@ git branch
 El resultat inicial serà similar a:
 
 ```
-```
-
-```
 * main
 ```
 
@@ -62,8 +59,6 @@ La branca `main` és la branca principal del projecte. En projectes antics tamb�
 
 Crea una nova branca amb la instrucció:
 
-```
-```
 
 ```
 git branch [branca]
@@ -72,16 +67,11 @@ git branch [branca]
 Per exemple:
 
 ```
-```
-
-```
 git branch primera
 ```
 
 Torna a llistar les branques:
 
-```
-```
 
 ```
 git branch
@@ -95,8 +85,6 @@ Comprova que la branca `primera` s'ha creat, però que encara estàs situat a `m
 
 Per passar a la nova branca utilitza:
 
-```
-```
 
 ```
 git checkout [branca]
@@ -104,8 +92,6 @@ git checkout [branca]
 
 Per exemple:
 
-```
-```
 
 ```
 git checkout primera
@@ -113,8 +99,6 @@ git checkout primera
 
 També pots utilitzar la comanda més moderna:
 
-```
-```
 
 ```
 git switch primera
@@ -122,8 +106,6 @@ git switch primera
 
 Comprova que ara estàs treballant a la branca `primera`:
 
-```
-```
 
 ```
 git branch
@@ -135,8 +117,6 @@ git branch
 -  Els canvis que facis als fitxers d'aquesta branca no es reflectiran a la branca `main` fins que facis una fusió (`merge`). 
 -  També pots crear una branca i situar-t'hi directament amb: 
 
-```
-```
 
 ```
 git checkout -b [branca]
@@ -144,8 +124,6 @@ git checkout -b [branca]
 
 o:
 
-```
-```
 
 ```
 git switch -c [branca]
@@ -153,8 +131,6 @@ git switch -c [branca]
 
 -  Amb la comanda següent pots veure el darrer commit de cada branca: 
 
-```
-```
 
 ```
 git branch -v
@@ -170,8 +146,6 @@ A la branca `primera`, modifica algun fitxer existent o crea'n un de nou.
 
 Per exemple:
 
-```
-```
 
 ```
 touch fitxer-primera.txt
@@ -179,8 +153,6 @@ touch fitxer-primera.txt
 
 Afegeix el fitxer a l'àrea de preparació:
 
-```
-```
 
 ```
 git add fitxer-primera.txt
@@ -189,16 +161,11 @@ git add fitxer-primera.txt
 Fes el commit:
 
 ```
-```
-
-```
 git commit -m "Afegeix fitxer a la branca primera"
 ```
 
 Comprova els commits de les branques:
 
-```
-```
 
 ```
 git branch -v
@@ -206,8 +173,6 @@ git branch -v
 
 Ara comprova que el fitxer o les modificacions realitzades a `primera` no apareixen a `main`:
 
-```
-```
 
 ```
 git checkout main
@@ -215,8 +180,6 @@ git checkout main
 
 Comprova el contingut del repositori i torna després a la branca `primera`:
 
-```
-```
 
 ```
 git checkout primera
@@ -230,17 +193,12 @@ Les branques creades localment no es creen automàticament al repositori remot d
 
 Per crear la branca al repositori remot, cal fer un `push`:
 
-```
-```
 
 ```
 git push origin [branca]
 ```
 
 Per exemple:
-
-```
-```
 
 ```
 git push origin primera
@@ -257,16 +215,11 @@ git push origin primera
 Per eliminar una branca local podem executar:
 
 ```
-```
-
-```
 git branch -d [branca]
 ```
 
 Per exemple:
 
-```
-```
 
 ```
 git branch -d primera
@@ -282,8 +235,6 @@ Quan has treballat en una branca, normalment voldràs incorporar els seus canvis
 
 Primer, situa't a `main`:
 
-```
-```
 
 ```
 git checkout main
@@ -291,8 +242,6 @@ git checkout main
 
 A continuació, fes la fusió:
 
-```
-```
 
 ```
 git merge [branca]
@@ -300,8 +249,6 @@ git merge [branca]
 
 Per exemple:
 
-```
-```
 
 ```
 git merge primera
@@ -309,8 +256,6 @@ git merge primera
 
 També pots utilitzar:
 
-```
-```
 
 ```
 git switch main
@@ -341,8 +286,6 @@ Seguirem aquest exemple.
 
 Situa't a la branca principal:
 
-```
-```
 
 ```
 git checkout main
@@ -350,8 +293,6 @@ git checkout main
 
 Crea un fitxer anomenat `prova.txt`:
 
-```
-```
 
 ```
 touch prova.txt
@@ -359,8 +300,6 @@ touch prova.txt
 
 Edita el fitxer i afegeix:
 
-```
-```
 
 ```
 Hola, com estàs?
@@ -368,8 +307,6 @@ Hola, com estàs?
 
 Fes el commit:
 
-```
-```
 
 ```
 git add prova.txt
@@ -382,8 +319,6 @@ git commit -m "Afegeix prova.txt"
 
 Crea una nova branca i situa-t'hi:
 
-```
-```
 
 ```
 git checkout -b nou
@@ -391,8 +326,6 @@ git checkout -b nou
 
 Modifica el fitxer `prova.txt`. Per exemple, canvia el seu contingut a:
 
-```
-```
 
 ```
 Hola, què tal?
@@ -400,8 +333,6 @@ Hola, què tal?
 
 Fes el commit:
 
-```
-```
 
 ```
 git add prova.txt
@@ -414,8 +345,6 @@ git commit -m "Modifica prova.txt a la branca nou"
 
 Torna a la branca principal:
 
-```
-```
 
 ```
 git checkout main
@@ -423,8 +352,6 @@ git checkout main
 
 Modifica novament `prova.txt`, però amb un contingut diferent:
 
-```
-```
 
 ```
 Hola, com va?
@@ -432,8 +359,6 @@ Hola, com va?
 
 Fes el commit:
 
-```
-```
 
 ```
 git add prova.txt
@@ -446,8 +371,6 @@ git commit -m "Modifica prova.txt a main"
 
 Ara intenta fusionar la branca `nou`:
 
-```
-```
 
 ```
 git merge nou
@@ -455,8 +378,6 @@ git merge nou
 
 Git pot mostrar un missatge similar a:
 
-```
-```
 
 ```
 CONFLICT (content): Merge conflict in prova.txt
@@ -465,8 +386,6 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 El fitxer `prova.txt` contindrà marques de conflicte similars a:
 
-```
-```
 
 ```
 <<<<<<< HEAD
@@ -486,8 +405,6 @@ Les marques tenen el significat següent:
 
 Després de solucionar manualment el conflicte, cal afegir el fitxer i fer un commit:
 
-```
-```
 
 ```
 git add prova.txt
@@ -506,8 +423,6 @@ Executa la instrucció necessària per comprovar que s'ha creat correctament.
 
 **Comandes orientatives:**
 
-```
-```
 
 ```
 git branch primera
@@ -539,8 +454,6 @@ Inclou les comandes utilitzades i una explicació breu.
 
 Un cop feta la fusió, elimina la branca:
 
-```
-```
 
 ```
 git branch -d primera
@@ -548,8 +461,6 @@ git branch -d primera
 
 Comprova que s'ha eliminat:
 
-```
-```
 
 ```
 git branch
@@ -563,8 +474,6 @@ Inclou una captura de pantalla on es pugui comprovar.
 
 Crea una branca anomenada `segona`:
 
-```
-```
 
 ```
 git checkout -b segona
@@ -574,8 +483,6 @@ Modifica un fitxer existent de manera que, posteriorment, es produeixi un confli
 
 Fes el commit dels canvis:
 
-```
-```
 
 ```
 git add .
@@ -584,8 +491,6 @@ git commit -m "Modificacions a la branca segona"
 
 Torna a `main`:
 
-```
-```
 
 ```
 git checkout main
@@ -595,8 +500,6 @@ Modifica el mateix fitxer en una zona que entri en conflicte amb els canvis de `
 
 Fes el commit:
 
-```
-```
 
 ```
 git add .
@@ -605,8 +508,6 @@ git commit -m "Modificacions a main"
 
 Finalment, intenta fusionar:
 
-```
-```
 
 ```
 git merge segona
@@ -616,8 +517,6 @@ git merge segona
 
 Entrega el contingut del fitxer on s'ha produït el conflicte, mostrant les marques de conflicte:
 
-```
-```
 
 ```
 <<<<<<< HEAD
@@ -635,8 +534,6 @@ Resol manualment el conflicte del punt anterior.
 
 Elimina les marques:
 
-```
-```
 
 ```
 <<<<<<< HEAD
@@ -648,8 +545,6 @@ i deixa el fitxer amb el contingut final que hagis decidit conservar.
 
 A continuació:
 
-```
-```
 
 ```
 git add .
@@ -658,8 +553,6 @@ git commit -m "Resol conflicte entre main i segona"
 
 Sincronitza la branca `segona` amb el repositori remot:
 
-```
-```
 
 ```
 git push origin segona
