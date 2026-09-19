@@ -2,20 +2,20 @@
 title: "Tasca: Exercicis model ER Entitats - Atributs - Interrelacions"
 date: 2026-05-15 10:00:00 +0100
 categories: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades]
-tags: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades, ASIX, FP, Dades, BBDD, Tasca, Pràctica, ER]
+tags: [Administració de Sistemes Informàtics en Xarxa, Gestió de Bases de Dades, ASIX, FP, Dades, BBDD, Tasca, Pràctica, ER,Entitats,Atributs,Interrelacions]
 ---
 
 ## Informació sobre la tasca
 
 El lliurament serà en format PDF. Llegir [Lliurament i presentació de tasques](/posts/entrega-presentacio-tasques/).
 
-La tasca es qualifica amb una nota d'APTE (10) o NO APTE (0).
+La tasca es qualifica com a APTE  o NO APTE .
 
-Durada activitats obligatòries: 6 hores.
+Durada activitats obligatòries: 2 hores.
 
-RA2.
+RA 2: Disseny models lògics normalitzats interpretant diagrames d’entitat/relació
 
-# NF2 - Disseny conceptural - model ER /ERE
+# Disseny conceptual 
 
 ## Exercicis Entitats, atributs i relacions
 
@@ -35,7 +35,7 @@ RA2.
 
 7. Una empresa té diferents delegacions repartides per tot el territori de Catalunya. De cada delegació en sabem l'adreça amb les següents dades: carrer i número, porta, CP. També la província i la ciutat. Cada delegació rep un nom mitjançant la ciutat a on està i un número seqüencial dins d'aquesta ciutat. Tenim per exemple: Barcelona 1, Barcelona 2 i Barcelona 3 i també Girona 1 i Albons 1. Els treballadors estan acostumats a identificar les delegacions d'aquesta manera. També podrien identificar-les per la posició geogràfica mitjançant la longitud i latitud que també es guarda a la base de dades, però no sembla tant pràctic. 
 
-### *Exercici 2* - Identifica les entitats, atributs i les interrelacions dels següents escenaris o situacions del món real.
+### *Exercici 2* - Identifica les entitats, atributs  dels següents escenaris o situacions del món real.
 
 1. La nostra universitat súper elitista “Pijos al Poder” disposa del professorat més dedicat del món. Cada professor imparteix un únic mòdul i un mòdul només és impartit per un  professor. De cada professor guardarem el NIF, nom. De cada mòdul guardarem el codi, descripció i el número d’hores.
 2. En el nostre centre els professors imparteixen varis mòduls. Un mòdul només el fa un professor.  De cada professor guardarem el NIF, nom. De cada mòdul guardarem el codi  i el número d’hores.
@@ -51,5 +51,10 @@ RA2.
 
 7. Estem fent una enquesta que volem informatitzar. L’enquesta tracta sobre els vehicles que té una persona en propietat. Una persona enquestada pot tenir cap, un o varis vehicles. De la persona guardarem el NIF, nom, data de naixement i l’edat. Del vehicle volem saber la matricula, el tipus de combustible que utilitza (Gasoil o Gasolina), l’any de fabricació i els anys que té.
 
-### *Exercici 3* - Indica el nom i la cardinalitat que pugin tenir les següents relacions. Si consideres que hi poden haver diverses solucions, justifica la resposta.
+### *Exercici 3* - Identifica les entitats, atributs i interrelacions o situacions del món real.
 
+1. Es necessita una base de dades relacional per a emmagatzemar informació sobre els assumptes que tracta un gabinet d'advocats. Cada assumpte té un número d'expedient que l'identifica, i correspon a un sol client. De l'assumpte es vol emmagatzemar la data d'inici, la data d'arxiu (finalitzat), el seu estat (en tràmit, arxivat, etc.), així com les dades personals del client al qui pertany el cas (DNI, nom, adreça, etc.). Alguns d'aquests assumptes els porta un o més d'un procurador, dels quals ens interessa saber també les dades personals.
+
+2. Es vol dissenyar una base de dades relacional que emmagatzemi informació relativa als zoos existents al món, així com a les espècies animals que hi resideixen. De cada zoo es coneix el nom, la ciutat i el país on es troba, la grandària (en m2) i el pressupost anual. De cada espècie animal s'emmagatzema el nom vulgar i el científic, la família a la que pertany i si es troba en perill d'extinció. A més, es vol desar informació sobre cada animal que els zoos posseeixen, com el número d'identificació, espècie, sexe, any de naixement, país d'origen i continent.
+
+3. Es necessita una base de dades per a emmagatzemar les dades dels socis d'un club nàutic. De cada soci es necessiten les dades personals i les dades del vaixell o vaixells que posseeixen: número de matrícula, nom, número d'amarra i quota que paga per amarrar. A més, es vol mantenir la informació sobre les sortides realitzades per cada vaixell, com la data i l'hora de sortida, destí i dades personals del patró, que no ha de ser obligatòriament el propietari del vaixell, ni necessàriament ha de ser soci del club.
