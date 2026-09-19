@@ -9,7 +9,7 @@ tags: [Administració de Sistemes Informàtics en Xarxa, Implantació d’aplica
 
 El lliurament serà en format PDF. Llegir [Lliurament i presentació de tasques](/posts/entrega-presentacio-tasques/).
 
-La tasca es qualifica amb una nota d'APTE (10) o NO APTE (0).
+La tasca es qualifica amb una nota de 0 a 10 punts.
 
 Durada activitats obligatòries: 10 hores.
 
