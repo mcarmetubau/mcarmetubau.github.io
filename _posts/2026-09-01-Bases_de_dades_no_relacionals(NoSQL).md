@@ -338,7 +338,7 @@ Les bases de dades orientades a columnes estan optimitzades per obtenir columnes
 
 **Exemples de bases de dades orientades a columnes**
 
-* [**Apache Cassandra**](http://cassandra.apache.org/).
+* [**Apache Cassandra**](https://cassandra.apache.org/).
 * [**HBase**](https://hbase.apache.org/).
 
 **Referències**
