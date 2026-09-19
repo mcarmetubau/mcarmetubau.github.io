@@ -76,7 +76,7 @@ Atès que en un sistema distribuït la **tolerància a la partició** és obliga
 
 Les bases de dades clau-valor són altament divisibles i permeten un escalat horitzontal a escales que altres tipus de bases de dades no poden assolir.
 
-![Clau valor](../../assets/img/clau_valor.png) .
+![Clau valor](../assets/img/clau-valor.png) .
 
 
 > Imatge: Exemple d’una base de dades clau-valor. [**Amazon Web Services**](https://aws.amazon.com/es/nosql/).
