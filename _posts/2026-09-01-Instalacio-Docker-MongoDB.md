@@ -5,7 +5,6 @@ categories: [General]
 tags: [pràctica, tasca, docker,mongodb]
 ---
 
-# Instalació Docker i MongoDb
 
 # MongoDB amb xarxa Docker i dades persistents
 
