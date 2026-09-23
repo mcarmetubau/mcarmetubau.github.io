@@ -20,143 +20,339 @@ RA
 
 ## Objectiu de la pràctica
 
-L'objectiu d'aquesta pràctica és **aprendre a treballar de manera col·laborativa amb Git i GitHub**, utilitzant el sistema de **Pull Requests**.
+L'objectiu d'aquesta pràctica és **aprendre a treballar de manera
+col·laborativa amb Git i GitHub**, utilitzant el sistema de **Forks i
+Pull Requests**.
 
-Durant la pràctica es treballarà el procés complet de creació d'una branca, realització de canvis, creació de commits, pujada dels canvis al repositori remot i creació d'un Pull Request.
+Durant la pràctica es treballarà el procés complet de:
 
-També es practicarà la **revisió i acceptació de Pull Requests**, la sincronització d'un repositori amb els canvis dels companys i el treball col·laboratiu en un mateix projecte.
+-   Fer un **Fork** d'un repositori.
+-   Clonar el Fork al repositori local.
+-   Fer canvis directament sobre la branca `main`.
+-   Crear commits.
+-   Pujar els canvis al Fork remot.
+-   Crear un Pull Request cap al repositori original.
+-   Revisar i acceptar Pull Requests.
+-   Sincronitzar el Fork amb el repositori original.
+-   Fer un Pull Request sobre el repositori d'un company.
 
+------------------------------------------------------------------------
 
----
-# Exercici — Pull Request amb GitHub
+# Recursos
 
-## Recursos
+**Article:** [Com col·laborar en un projecte de programari lliure? Què
+és un Pull
+Request?](https://www.freecodecamp.org/espanol/news/como-hacer-tu-primer-pull-request-en-github/)
 
-**Article:** [Com col·laborar en un projecte de programari lliure? Què és un Pull Request?](https://www.freecodecamp.org/espanol/news/como-hacer-tu-primer-pull-request-en-github/)
+**Repositori original de l'exercici:**
 
-**Repositori de l'exercici:**
 https://github.com/mcarmetubau/Practiques26-27.git
 
----
+------------------------------------------------------------------------
 
-## Què és un Pull Request?
+# Què és un Fork?
 
-Un **Pull Request (PR)** és una petició que es fa al propietari d'un repositori perquè incorpori els canvis proposats en una branca al repositori original.
+Un **Fork** és una còpia d'un repositori d'un altre usuari dins del teu
+propi compte de GitHub.
 
-En aquest exercici hauràs de crear un Pull Request sobre el repositori:
+El Fork permet treballar sobre una còpia del projecte sense tenir
+permisos d'escriptura sobre el repositori original.
+
+En aquesta pràctica hauràs de fer un Fork del repositori:
 
 **https://github.com/mcarmetubau/Practiques26-27.git**
 
-L'objectiu és practicar el flux de treball col·laboratiu amb **Git i GitHub**.
+El flux de treball serà:
 
----
+``` text
+Repositori original
+        │
+        │ Fork
+        ↓
+El teu repositori a GitHub
+        │
+        │ clone
+        ↓
+Repositori local
+        │
+        │ canvis + commit
+        ↓
+El teu Fork a GitHub
+        │
+        │ Pull Request
+        ↓
+Repositori original
+```
+
+------------------------------------------------------------------------
 
 # Què has de fer?
 
-## 1. Realitzar un Pull Request
+## 1. Fer un Fork del repositori
 
-Has de realitzar un Pull Request al repositori indicat anteriorment per sol·licitar **dos canvis**.
+Accedeix al repositori:
 
-### 1.1. Modificar el fitxer `README.md`
+**https://github.com/mcarmetubau/Practiques26-27.git**
 
-Has de modificar el fitxer `README.md` per afegir un enllaç a la llista.
+A GitHub:
+
+1.  Prem el botó **Fork**.
+2.  Selecciona el teu compte personal.
+3.  GitHub crearà una còpia del repositori al teu compte.
+
+A partir d'aquest moment treballaràs sobre **el teu Fork**.
+
+------------------------------------------------------------------------
+
+## 2. Clonar el Fork
+
+Clona el teu repositori, no el repositori original.
+
+Per exemple:
+
+``` bash
+git clone URL_DEL_TEU_FORK
+cd Practiques26-27
+```
+
+Comprova els repositoris remots:
+
+``` bash
+git remote -v
+```
+
+El repositori `origin` hauria de ser el teu Fork.
+
+------------------------------------------------------------------------
+
+# 3. Realitzar els canvis
+
+
+Comprova que estàs a `main`:
+
+``` bash
+git checkout main
+```
+
+### 3.1. Modificar el fitxer `README.md`
+
+Modifica el fitxer `README.md` per afegir un enllaç a la llista.
 
 L'enllaç ha de:
 
-* Mostrar les teves inicials.
-* Apuntar al fitxer Markdown que crearàs dins del directori `files`.
+-   Mostrar les teves inicials.
+-   Apuntar al fitxer Markdown que crearàs dins del directori `files`.
 
 Per exemple, si les teves inicials són `mct`:
 
-```md
+``` md
 - [MCT](files/mct.md)
 ```
 
-### 1.2. Crear un fitxer dins de `files`
+### 3.2. Crear un fitxer dins de `files`
 
 Crea un fitxer dins del directori `files` amb el nom:
 
-```text
+``` text
 teves_inicials.md
 ```
 
 Per exemple:
 
-```text
+``` text
 files/mct.md
 ```
 
-Dins d'aquest fitxer hauràs d'escriure en **Markdown** la resposta a la pregunta:
+Dins d'aquest fitxer hauràs d'escriure en **Markdown** la resposta a la
+pregunta:
 
 > **Quina assignatura t'agrada més? I per què?**
 
 Pots utilitzar diferents elements de Markdown, com ara:
 
-* Títols
-* Paràgrafs
-* Llistes
-* **Negreta**
-* *Cursiva*
-* [Enllaços](https://www.example.com)
-* Imatges, si ho consideres necessari
+-   Títols
+-   Paràgrafs
+-   Llistes
+-   **Negreta**
+-   *Cursiva*
+-   [Enllaços](https://www.example.com)
+-   Imatges, si ho consideres necessari
 
----
+------------------------------------------------------------------------
 
-## 2. Crear el Pull Request
+# 4. Crear el commit
 
-Quan hagis fet els canvis:
+Comprova els canvis:
 
-1. Crea una branca nova per treballar.
-2. Modifica el `README.md`.
-3. Crea el teu fitxer dins del directori `files`.
-4. Fes els commits necessaris.
-5. Puja la branca al repositori remot.
-6. Crea el Pull Request a GitHub.
+``` bash
+git status
+```
 
-El missatge del commit ha de ser **significatiu** i ha d'explicar breument què has fet.
+Afegeix els fitxers:
 
-Per exemple:
+``` bash
+git add README.md files/teves_inicials.md
+```
 
-```bash
+Crea el commit:
+
+``` bash
 git commit -m "Afegeix fitxer personal i enllaç al README"
 ```
+
+El missatge del commit ha de ser **significatiu** i explicar breument
+què has fet.
+
+També pots comprovar el commit amb:
+
+``` bash
+git log --oneline
+```
+
+------------------------------------------------------------------------
+
+# 5. Pujar els canvis al teu Fork
+
+Com que estàs treballant sobre `main`:
+
+``` bash
+git push origin main
+```
+
+Ara els canvis haurien d'aparèixer al teu Fork de GitHub.
+
+------------------------------------------------------------------------
+
+# 6. Crear el Pull Request
+
+Des de GitHub, entra al teu Fork.
+
+GitHub hauria de mostrar l'opció per crear un **Pull Request** amb els
+canvis que acabes de pujar.
+
+El Pull Request ha de tenir:
+
+``` text
+Base repository:
+mcarmetubau/Practiques26-27
+
+Base branch:
+main
+
+Head repository:
+EL_TEU_USUARI/Practiques26-27
+
+Head branch:
+main
+```
+
+Per tant, el Pull Request serà:
+
+``` text
+El teu Fork (main)
+       │
+       │ Pull Request
+       ↓
+Repositori original (main)
+```
+
+Escriu un títol i una descripció clars i crea el Pull Request.
 
 ### Important
 
 Una vegada creat el Pull Request, **espera que el professor l'accepti**.
 
-No facis la fusió (`merge`) pel teu compte si el professor és qui ha d'acceptar el PR.
+No facis la fusió (`merge`) pel teu compte si és el professor qui ha
+d'acceptar el PR.
 
----
+------------------------------------------------------------------------
 
-## 3. Sincronitzar el repositori
+# 7. Sincronitzar el teu Fork
 
-Una vegada finalitzat l'exercici i quan el professor ho indiqui, has de sincronitzar el teu repositori.
+Una vegada que el professor hagi acceptat els Pull Requests i ho
+indiqui, hauràs de sincronitzar el teu Fork amb el repositori original.
 
-L'objectiu és que el teu repositori tingui els fitxers i els canvis realitzats pels teus companys.
+Primer comprova els repositoris remots:
 
-Pots actualitzar el repositori local amb:
-
-```bash
-git checkout main
-git pull
+``` bash
+git remote -v
 ```
 
-Comprova que tens els canvis i els fitxers dels teus companys.
+Si encara no tens configurat el repositori original (el del professor) com a `upstream`,
+afegeix-lo:
 
----
+``` bash
+git remote add upstream https://github.com/mcarmetubau/Practiques26-27.git
+```
 
-## 4. Fer un Pull Request sobre el repositori d'un company
+Comprova que s'ha afegit:
+
+``` bash
+git remote -v
+```
+
+Hauries de tenir:
+
+``` text
+origin    → el teu Fork
+upstream  → repositori original
+```
+```
+
+
+Actualitza la informació del repositori original:
+
+``` bash
+git pull upstream main
+```
+
+Canvia a `main`:
+
+``` bash
+git checkout main
+```
+
+Actualitza la teva branca `main` amb els canvis del repositori original:
+
+``` bash
+git merge upstream/main
+```
+
+Finalment, puja els canvis actualitzats al teu Fork:
+
+``` bash
+git push origin main
+```
+
+Ara el teu Fork hauria d'estar sincronitzat amb el repositori original.
+
+Comprova que tens els fitxers i els canvis realitzats pels teus
+companys.
+
+------------------------------------------------------------------------
+
+# 8. Fer un Pull Request sobre el repositori d'un company
 
 Tria un company i fes un **Pull Request sobre el seu repositori**.
 
-El teu company haurà de revisar i acceptar el teu Pull Request.
+Per fer-ho:
 
-Al mateix temps, **un company haurà de fer un Pull Request sobre el teu repositori**.
+1.  Accedeix al repositori del company.
+2.  Fes un **Fork** del seu repositori.
+3.  Clona el teu Fork.
+4.  Fes el canvi que hàgiu acordat amb el company.
+5.  Fes el commit corresponent.
+6.  Puja el canvi a `main` del teu Fork.
+7.  Crea un Pull Request des del teu Fork cap al repositori del company.
+8.  El company haurà de revisar i acceptar el teu Pull Request.
+
+
+Al mateix temps, **un company haurà de fer un Pull Request sobre el teu
+repositori**.
 
 Per tant, al final de l'activitat:
 
-```text
+``` text
 Tu
  │
  ├──> Pull Request ──> Repositori del company
@@ -165,103 +361,49 @@ Tu
  └──< Pull Request <── Repositori del company
 ```
 
----
+------------------------------------------------------------------------
 
-# Flux de treball recomanat
+# Flux de treball complet
 
-El procés complet pot ser:
+El procés complet serà:
 
-```text
-1. Clonar el repositori
+``` text
+1. Fer Fork del repositori del professor
         ↓
-2. Crear una branca
+2. Clonar el teu Fork
         ↓
-3. Modificar README.md
+3. Treballar sobre main
         ↓
-4. Crear el fitxer files/teves_inicials.md
+4. Modificar README.md
         ↓
-5. Fer commit
+5. Crear files/teves_inicials.md
         ↓
-6. Fer push
+6. Fer commit
         ↓
-7. Crear Pull Request
+7. Fer push a origin main
         ↓
-8. Esperar la revisió
+8. Crear Pull Request cap al repositori original
         ↓
-9. Pull Request acceptat
+9. Esperar la revisió i acceptació del professor
         ↓
-10. Actualitzar el repositori
+10. Configurar upstream
         ↓
-11. Fer un PR sobre el repositori d'un company
+11. Sincronitzar main amb upstream/main
         ↓
-12. Acceptar el PR d'un company al teu repositori
+12. Fer push del main actualitzat al teu Fork
+        ↓
+13. Fer un Fork del repositori d'un company
+        ↓
+14. Fer un canvi i un commit
+        ↓
+15. Fer push a main
+        ↓
+16. Crear un Pull Request cap al repositori del company
+        ↓
+17. Un company fa un Pull Request sobre el teu repositori
+        ↓
+18. Acceptar el Pull Request del company
 ```
 
----
+------------------------------------------------------------------------
 
-# Què has de lliurar?
-
-## 1. Passos fonamentals
-
-Has d'explicar els **passos fonamentals, amb les instruccions corresponents**, per realitzar un Pull Request.
-
-Per exemple:
-
-```bash
-git clone URL_DEL_REPOSITORI
-git checkout -b nom-branca
-git add .
-git commit -m "Missatge significatiu"
-git push -u origin nom-branca
-```
-
-Després hauràs de crear el Pull Request des de GitHub.
-
----
-
-## 2. Actualitzar el repositori remot
-
-Quan **tots els alumnes hagin enviat els seus Pull Requests** i el professor ho indiqui:
-
-1. Actualitza el teu repositori.
-2. Comprova que tens els canvis de tots els companys.
-3. Envia al professor la **URL del teu repositori** perquè pugui comprovar-lo.
-
-Per actualitzar el repositori local:
-
-```bash
-git checkout main
-git pull
-```
-
-Comprova que els fitxers dels teus companys estan disponibles.
-
----
-
-## 3. Captura de pantalla
-
-Has de lliurar una **captura de pantalla** on es vegi que has acceptat el Pull Request que ha realitzat un company sobre el teu repositori.
-
-La captura ha de permetre comprovar:
-
-* El Pull Request del company.
-* Que ha estat acceptat/fusionat.
-* El repositori on s'ha realitzat l'operació.
-
----
-
-# Resum de lliurables
-
-* [ ] Explicació dels passos fonamentals per fer un Pull Request.
-* [ ] Instruccions/comandes Git utilitzades.
-* [ ] Modificació del `README.md`.
-* [ ] Enllaç amb les teves inicials al `README.md`.
-* [ ] Fitxer `files/teves_inicials.md`.
-* [ ] Resposta en Markdown a la pregunta «Quina assignatura t'agrada més? I per què?».
-* [ ] Pull Request creat sobre el repositori del professor.
-* [ ] Pull Request acceptat pel professor.
-* [ ] Repositori actualitzat amb els fitxers dels companys.
-* [ ] URL del teu repositori remot.
-* [ ] Pull Request realitzat sobre el repositori d'un company.
-* [ ] Pull Request d'un company sobre el teu repositori.
-* [ ] Captura de pantalla on es vegi que has acceptat el Pull Request del company.
