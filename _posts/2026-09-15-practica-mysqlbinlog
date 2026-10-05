@@ -1,0 +1,566 @@
+---
+title: "Tasca: Creació i publicació d'una web estàtica amb GitHub Pages "
+date: 2026-05-09 9:00:00 +0100
+categories: [Administració de Sistemes Informàtics en Xarxa, Implantació d’aplicacions web]
+tags: [Administració de Sistemes Informàtics en Xarxa, Implantació d’aplicacions web, ASIX, FP, WEB, Implantació , Tasca, Pràctica, GitHub, Markdown, SSG, GitHubPages]
+---
+
+## Informació sobre la tasca
+
+El lliurament serà en format PDF. Llegir [Lliurament i presentació de tasques](/posts/entrega-presentacio-tasques/).
+
+La tasca es qualifica amb una nota d'apte o no apte.
+
+Durada activitats obligatòries: 3 hores.
+
+RA
+
+> 📸 Recorda fer captures dels passos realitzats
+{:.prompt-info}
+
+
+# Guia de recuperació d'una base de dades amb `mysqlbinlog`
+
+## 1. Introducció
+
+En aquesta pràctica veurem com podem **recuperar una base de dades que s'ha eliminat accidentalment** utilitzant els registres binaris de MySQL.
+
+Els **Binary Logs** enregistren les operacions que es realitzen sobre el servidor MySQL, com ara:
+
+* Crear bases de dades.
+* Crear i eliminar taules.
+* Inserir dades.
+* Modificar dades.
+* Eliminar dades.
+
+Gràcies a aquests registres podem recuperar les operacions realitzades fins a un moment determinat.
+
+---
+
+# 2. Comprovar que el Binary Log està activat
+
+Primer entrem a MySQL amb un usuari que tingui els permisos necessaris, per exemple `root`.
+
+Executem:
+
+```sql
+SHOW VARIABLES LIKE '%bin%';
+```
+
+Aquesta comanda mostra les variables relacionades amb el registre binari.
+
+Ens interessa comprovar principalment:
+
+```text
+log_bin = ON
+```
+
+Això indica que el **Binary Log està activat**.
+
+També podem comprovar:
+
+```text
+sql_log_bin = ON
+```
+
+Això indica que les operacions SQL s'estan enregistrant al Binary Log.
+
+---
+
+# 3. Comprovar els fitxers de Binary Log
+
+Per veure els fitxers de registre disponibles podem executar:
+
+```sql
+SHOW MASTER LOGS;
+```
+
+Aquesta comanda mostra els diferents fitxers de Binary Log que té el servidor.
+
+Per exemple: (podeu també localizar-els fisicament al disc dur)
+
+```text
+mysql-bin.000001
+mysql-bin.000002
+mysql-bin.000003
+```
+
+---
+
+# 4. Crear un nou fitxer de log
+
+Per començar la pràctica amb un fitxer de registre nou podem executar:
+
+```sql
+FLUSH LOGS;
+```
+
+Aquesta ordre tanca el fitxer actual i crea un nou fitxer de Binary Log.
+
+Per exemple:
+
+```text
+mysql-bin.000003
+```
+
+passaria a ser:
+
+```text
+mysql-bin.000004
+```
+
+Això ens permet tenir més control sobre les operacions que es realitzaran durant la pràctica.
+
+---
+
+# 5. Crear o carregar la base de dades
+
+Ara crearem o carregarem la base de dades que volem utilitzar. (podeu utilitzar qualsevol dels fitxers de lots que disposeu)
+
+En aquesta guia utilitzarem un nom genèric:
+
+```text
+nom_base_dades
+```
+
+Podem comprovar que la base de dades existeix amb:
+
+```sql
+SHOW DATABASES;
+```
+
+Després seleccionem la base de dades:
+
+```sql
+USE nom_base_dades;
+```
+
+I podem comprovar les taules disponibles amb:
+
+```sql
+SHOW TABLES;
+```
+
+Per comprovar que les dades existeixen correctament podem fer, per exemple:
+
+```sql
+SELECT * FROM nom_taula;
+```
+
+On `nom_taula` representa qualsevol taula de la nostra base de dades.
+
+---
+
+# 6. Simular una pèrdua de dades
+
+Ara simularem un error.
+
+## Eliminar tota la base de dades
+
+Podem eliminar la base de dades amb:
+
+```sql
+DROP DATABASE nom_base_dades;
+```
+
+En aquest moment la base de dades i totes les seves taules han desaparegut.
+
+Tot i això, les operacions anteriors han quedat enregistrades al **Binary Log**.
+
+Això ens permetrà intentar recuperar-les.
+
+---
+
+# 7. Analitzar el Binary Log amb `mysqlbinlog`
+
+Ara sortim de la consola de MySQL i utilitzem l'eina:
+
+```text
+mysqlbinlog
+```
+
+Aquesta eina permet llegir i analitzar els fitxers de Binary Log.
+
+Podem guardar el contingut del log en un fitxer de text amb:
+
+```bash
+mysqlbinlog mysql-bin.000004 > recuperacio.log
+```
+
+En aquest exemple:
+
+* `mysql-bin.000004` és el fitxer de Binary Log que volem analitzar.
+* `recuperacio.log` és el fitxer de text on guardarem el contingut.
+
+---
+
+# 8. Decodificar les operacions
+
+Per veure les operacions de manera més detallada podem utilitzar:
+
+```bash
+mysqlbinlog --base64-output=decode-rows -v mysql-bin.000004 > recuperacio.log
+```
+
+Les opcions principals són:
+
+### `--base64-output=decode-rows`
+
+Permet mostrar de manera més comprensible les operacions que afecten les files de les taules.
+
+### `-v`
+
+És l'opció `--verbose` i mostra informació addicional sobre les operacions enregistrades.
+
+Ara podem obrir el fitxer:
+
+```text
+recuperacio.log
+```
+
+i analitzar les diferents operacions / anotacions realitzades
+
+---
+
+# 9. Recuperació mitjançant data i hora
+
+Una de les formes de recuperació consisteix a utilitzar **data i hora**.
+
+Primer hem de buscar dins del Binary Log:
+
+1. El moment en què comencen les operacions que volem recuperar.
+2. El moment anterior a l'operació que ha provocat la pèrdua de dades. (just abans del drop)
+
+Per exemple:
+
+```text
+Inici: 2026-10-05 18:00:00
+Final: 2026-10-05 18:10:00
+```
+
+L'objectiu és recuperar les operacions que es troben entre aquestes dues dates.
+
+---
+
+## 9.1. Comanda de recuperació
+
+La sintaxi general és:
+
+```bash
+mysqlbinlog \
+--start-datetime="AAAA-MM-DD HH:MM:SS" \
+--stop-datetime="AAAA-MM-DD HH:MM:SS" \
+-D mysql-bin.000004 | mysql -u root -p
+```
+
+Per exemple:
+
+```bash
+mysqlbinlog \
+--start-datetime="2026-10-05 18:00:00" \
+--stop-datetime="2026-10-05 18:10:00" \
+-D mysql-bin.000004 | mysql -u root -p
+```
+
+### Significat de les opcions
+
+| Opció              | Funció                                                |
+| ------------------ | ----------------------------------------------------- |
+| `--start-datetime` | Indica la data i hora des d'on comença la recuperació |
+| `--stop-datetime`  | Indica la data i hora on acaba la recuperació         |
+| `-D`               | Desactiva el registre binari durant la reproducció    |
+| `mysql-bin.000004` | Binary Log que volem utilitzar                        |
+| `\|`               | Envia la sortida de `mysqlbinlog` a MySQL             |
+| `mysql -u root -p` | Executa les operacions recuperades a MySQL            |
+
+---
+
+# 10. Comprovar la recuperació
+
+Una vegada executada la comanda, tornem a entrar a MySQL.
+
+Primer comprovem que la base de dades ha tornat a aparèixer:
+
+```sql
+SHOW DATABASES;
+```
+
+Després seleccionem la base de dades:
+
+```sql
+USE nom_base_dades;
+```
+
+I comprovem les taules:
+
+```sql
+SHOW TABLES;
+```
+
+Finalment, comprovem les dades:
+
+```sql
+SELECT * FROM nom_taula;
+```
+
+Si la base de dades, les taules i les dades apareixen correctament, significa que la recuperació ha funcionat.
+
+---
+
+OPCIONAL VERSIO 2
+
+# 11. Recuperació per posició
+
+Una altra forma de recuperar les dades és utilitzar les **posicions dins del Binary Log**.
+
+Aquest mètode és útil quan volem recuperar només una part concreta de les operacions enregistrades.
+
+Les dues opcions principals són:
+
+```text
+--start-position
+```
+
+i:
+
+```text
+--stop-position
+```
+
+---
+
+# 12. Simular l'eliminació d'una taula
+
+Ara podem simular un error eliminant només una taula.
+
+Per exemple:
+
+```sql
+DROP TABLE nom_taula;
+```
+
+Ara la taula ha desaparegut.
+
+Però les operacions relacionades amb aquesta taula continuen estant enregistrades al Binary Log.
+
+---
+
+# 13. Buscar les posicions
+
+Obrim el fitxer:
+
+```text
+recuperacio.log
+```
+
+i busquem les operacions relacionades amb:
+
+```text
+nom_taula
+```
+
+Hem de localitzar:
+
+* La posició on comença l'operació que volem recuperar.
+* La posició on acaba l'operació que volem recuperar.
+
+Per exemple:
+
+```text
+start-position = 3182
+stop-position = 4869
+```
+
+> **Important:** aquests números són només un exemple. Les posicions reals depenen del Binary Log que estiguem utilitzant.
+
+---
+
+# 14. Recuperar una taula concreta
+
+La sintaxi general és:
+
+```bash
+mysqlbinlog \
+--start-position=POSICIO_INICIAL \
+--stop-position=POSICIO_FINAL \
+-D mysql-bin.000004 | mysql -u root -p
+```
+
+Per exemple:
+
+```bash
+mysqlbinlog \
+--start-position=3182 \
+--stop-position=4869 \
+-D mysql-bin.000004 | mysql -u root -p
+```
+
+En aquest cas només reproduïm les operacions que es troben entre les posicions indicades.
+
+---
+
+# 15. Comprovar la recuperació de la taula
+
+Una vegada finalitzada la recuperació, tornem a entrar a MySQL.
+
+Seleccionem la base de dades:
+
+```sql
+USE nom_base_dades;
+```
+
+Comprovem les taules:
+
+```sql
+SHOW TABLES;
+```
+
+La taula:
+
+```text
+nom_taula
+```
+
+hauria de tornar a aparèixer.
+
+Finalment, comprovem les seves dades:
+
+```sql
+SELECT * FROM nom_taula;
+```
+
+Si les dades apareixen correctament, significa que la taula s'ha recuperat.
+
+---
+
+# 16. Resum de les comandes
+
+## Comprovar el Binary Log
+
+```sql
+SHOW VARIABLES LIKE '%bin%';
+```
+
+## Veure els Binary Logs
+
+```sql
+SHOW MASTER LOGS;
+```
+
+## Crear un nou Binary Log
+
+```sql
+FLUSH LOGS;
+```
+
+## Analitzar un Binary Log
+
+```bash
+mysqlbinlog mysql-bin.000004 > recuperacio.log
+```
+
+## Analitzar-lo amb més detall
+
+```bash
+mysqlbinlog --base64-output=decode-rows -v mysql-bin.000004 > recuperacio.log
+```
+
+## Recuperar per data i hora
+
+```bash
+mysqlbinlog \
+--start-datetime="AAAA-MM-DD HH:MM:SS" \
+--stop-datetime="AAAA-MM-DD HH:MM:SS" \
+-D mysql-bin.000004 | mysql -u root -p
+```
+
+## Recuperar per posició
+
+```bash
+mysqlbinlog \
+--start-position=POSICIO_INICIAL \
+--stop-position=POSICIO_FINAL \
+-D mysql-bin.000004 | mysql -u root -p
+```
+
+---
+
+# 17. Esquema del procés
+
+```text
+┌──────────────────────────┐
+│ Activar Binary Log       │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│ Crear/carregar la BD     │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│ Es registren operacions  │
+│ al Binary Log            │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│ Es produeix un error     │
+│ (DROP DATABASE/TABLE)    │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│ Analitzar Binary Log     │
+│ amb mysqlbinlog          │
+└────────────┬─────────────┘
+             │
+             ├──────────────────────┐
+             ▼                      ▼
+┌──────────────────────┐  ┌──────────────────────┐
+│ Recuperació per      │  │ Recuperació per      │
+│ data i hora          │  │ posició              │
+│                      │  │                      │
+│ --start-datetime     │  │ --start-position     │
+│ --stop-datetime      │  │ --stop-position      │
+└────────────┬─────────┘  └────────────┬─────────┘
+             │                         │
+             └────────────┬────────────┘
+                          ▼
+              ┌──────────────────────┐
+              │ Comprovar recuperació│
+              │ de BD/taula i dades  │
+              └──────────────────────┘
+```
+
+---
+
+# 18. Conclusió
+
+El `mysqlbinlog` és una eina que permet **analitzar i reproduir les operacions enregistrades als Binary Logs de MySQL**.
+
+En cas d'una eliminació accidental, podem utilitzar aquests registres per recuperar les dades sempre que les operacions necessàries encara estiguin disponibles.
+
+Els dos mètodes principals que hem vist són:
+
+### Recuperació per data i hora
+
+```text
+--start-datetime
+--stop-datetime
+```
+
+Permet recuperar les operacions d'un interval temporal concret.
+
+### Recuperació per posició
+
+```text
+--start-position
+--stop-position
+```
+
+Permet seleccionar un fragment concret del Binary Log.
+
+Per tant, el procés general és:
+
+**registrar les operacions → produir-se l'error → analitzar el Binary Log → seleccionar què recuperar → reproduir les operacions → comprovar les dades recuperades.**
