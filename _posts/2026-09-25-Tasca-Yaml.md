@@ -9,7 +9,7 @@ tags: [Administració de Sistemes Informàtics en Xarxa, Llenguatge de Marques, 
 
 Per a cada exercici, crea un document YAML amb les dades requerides i comprova que sigui vàlid.
 
-Pots utilitzar [Yamllint](http://www.yamllint.com/) o una eina equivalent en línia per validar els documents YAML.
+Pots utilitzar [Yamllint](https://www.yamllint.com/) o una eina equivalent en línia per validar els documents YAML.
 
 **Opcional:** crea també les dades corresponents en format JSON i valida-les amb una eina en línia, com ara [JSONLint](https://jsonlint.com/).
 
