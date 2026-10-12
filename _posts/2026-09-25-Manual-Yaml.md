@@ -14,7 +14,7 @@ S'utilitza habitualment per definir configuracions d'aplicacions, descriure estr
 El nom YAML prové de *YAML Ain't Markup Language* (YAML no és un llenguatge de marcatge).
 
 Alguns exemples d'eines i tecnologies que utilitzen YAML són:
-
+ 
 - Kubernetes, per definir recursos com ara *pods*, *deployments* i serveis.
 - Docker Compose, per descriure aplicacions formades per diversos contenidors.
 - GitHub Actions, per definir fluxos de treball automatitzats.
