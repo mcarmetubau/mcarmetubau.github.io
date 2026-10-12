@@ -19,30 +19,19 @@ Crea un diccionari que contingui els atributs següents: `hostname`: una cadena 
 
 ## 2. Diccionari amb `hostname`, `loopback` i `interfaces`
 
-Crea un diccionari que contingui els atributs següents:
-
-- `hostname`: una cadena de text.
-- `loopback`: una adreça IP.
-- `interfaces`: una llista de cadenes de text.
+Crea un diccionari que contingui els atributs següents: `hostname`: una cadena de text, `loopback`: una adreça IP, `interfaces`: una llista de cadenes de text.
 
 ## 3. Llista de parelles d'usuari i contrasenya
 
-Crea una llista de parelles que continguin els atributs següents:
-
-- `username`: una cadena de text amb el nom d'usuari.
-- `password`: una cadena de text amb la contrasenya.
+Crea una llista de parelles que continguin els atributs següents: `username`: una cadena de text amb el nom d'usuari,  `password`: una cadena de text amb la contrasenya.
 
 ## 4. Llista d'usuaris amb atributs obligatoris i opcionals
 
 Crea una llista d'usuaris que tinguin els atributs següents.
 
-**Atributs obligatoris:**
-- `username`: nom d'usuari.
-- `password`: contrasenya.
+**Atributs obligatoris:**:  `username`: nom d'usuari, `password`: contrasenya.
 
-**Atributs opcionals:**
-- `privilege`: un nombre que indica el nivell de privilegi.
-- `autocommand`: una cadena de text que especifica una ordre automàtica.
+**Atributs opcionals:**:  `privilege`: un nombre que indica el nivell de privilegi, `autocommand`: una cadena de text que especifica una ordre automàtica.
 
 ## 5. Llista de veïns BGP
 
@@ -59,9 +48,7 @@ Crea una llista de veïns BGP (*Border Gateway Protocol*) que tinguin els atribu
 
 ## 6. Llista de veïns BGP amb prefixos
 
-Crea una llista de veïns BGP amb la mateixa estructura que en l'exercici anterior i afegeix-hi l'atribut opcional següent:
-
-- `prefixes`: una llista de prefixos IP.
+Crea una llista de veïns BGP amb la mateixa estructura que en l'exercici anterior i afegeix-hi l'atribut opcional següent: `prefixes`: una llista de prefixos IP.
 
 ## 7. Descripció d'un encaminador BGP
 
@@ -77,7 +64,6 @@ Crea una descripció d'un encaminador BGP que contingui els atributs següents:
 
 Per a cada exercici:
 
-1. Crea el document YAML corresponent.
+1. Crea el document YAML corresponent i adjunta el contingut
 2. Comprova que la sintaxi sigui correcta amb un validador YAML.
-3. Desa els fitxers amb una extensió `.yaml` o `.yml`.
-4. **Opcionalment**, crea la versió JSON de cada exercici, desa-la amb l'extensió `.json` i valida-la amb un validador JSON.
+3. **Opcionalment**, crea la versió JSON de cada exercici, desa-la amb l'extensió `.json` i valida-la amb un validador JSON.
