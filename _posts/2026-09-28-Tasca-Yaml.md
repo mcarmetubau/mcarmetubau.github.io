@@ -4,7 +4,7 @@ date: 2026-09-28 10:00:00 +0100
 categories: [Administració de Sistemes Informàtics en Xarxa, Llenguatge de Marques]
 tags: [Administració de Sistemes Informàtics en Xarxa, Llenguatge de Marques, ASIX, YAML, FP, Exercici,Tasca, Pràctica]
 ---
-  
+   
 # Exercicis pràctics de YAML i JSON  
 
 Per a cada exercici, crea un document YAML amb les dades requerides i comprova que sigui vàlid.
