@@ -127,15 +127,7 @@ Vist així, el model E/R quedaria d'una altra forma. Però aquest exercici no de
 
 ---
 
-## 7. Professors, llibres i classes
-
-Els professors recomanen una sèrie de llibres a les diferents classes en què imparteixen docència.
-
-**Referència:**
-
-[Vertabelo — N-ary Relationship Types](http://www.vertabelo.com/blog/technical-articles/n-ary-relationship-types)
-
-## 8. Professors i tesis doctorals
+## 7. Professors i tesis doctorals
 
 Els professors supervisen les tesis doctorals d'altres professors.
 
@@ -143,7 +135,7 @@ Els professors supervisen les tesis doctorals d'altres professors.
 - Volem saber coses de les tesis.
 - Pensa en els atributs adequats de cada entitat.
 
-## 9. Proveïdors, peces i projectes
+## 8. Proveïdors, peces i projectes
 
 Els proveïdors subministren peces als projectes de la nostra empresa.
 
