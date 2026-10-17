@@ -4,6 +4,20 @@ date: 2026-09-28 10:00:00 +0100
 categories: [Administració de Sistemes Informàtics en Xarxa, Llenguatge de Marques]
 tags: [Administració de Sistemes Informàtics en Xarxa, Llenguatge de Marques, ASIX, YAML, FP, Exercici,Tasca, Pràctica]
 ---
+
+## Informació sobre la tasca
+
+El lliurament serà en format PDF. Llegir [Lliurament i presentació de tasques](/posts/entrega-presentacio-tasques/).
+
+La tasca es qualifica amb una nota d'apte o no apte.
+
+Durada activitats obligatòries: 3 hores.
+
+RA 
+
+> 📸 Recorda fer captures dels passos realitzats
+{:.prompt-info}  
+
    
 # Exercicis pràctics de YAML i JSON  
 
