@@ -242,3 +242,6 @@ Per començar a crear fitxers YAML, només cal comprendre els conceptes bàsics 
 5. La combinació de mapes i llistes per representar estructures complexes.
 
 Amb aquests coneixements bàsics, resulta molt més senzill interpretar i crear fitxers de configuració YAML per a diferents aplicacions, serveis i eines.
+
+
+YAML no es considera habitualment un llenguatge de marques perquè es classifica com un format de serialització de dades. La seva sintaxi està dissenyada per expressar dades estructurades de manera llegible, en lloc d'utilitzar etiquetes per delimitar elements d'un document.YAML no es considera habitualment un llenguatge de marques perquè es classifica com un format de serialització de dades. La seva sintaxi està dissenyada per expressar dades estructurades de manera llegible, en lloc d'utilitzar etiquetes per delimitar elements d'un document.
